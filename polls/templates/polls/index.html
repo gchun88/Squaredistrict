@@ -7,6 +7,7 @@
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
+
 <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
     </ul>
@@ -15,7 +16,7 @@
 {% endif %}
 <p>
     <a href="http://www.coinqual.com/polls">
-        <img border ="0" alt="polls" src="https://png.icons8.com/metro/50/000000/contacts.png">
+        <img border ="0" alt="polls" src="./contacts.png">
     </a></p>
 </body>
 </html>
