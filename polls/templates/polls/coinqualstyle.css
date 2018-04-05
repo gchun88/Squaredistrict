@@ -1,0 +1,32 @@
+#Table
+    {padding:5px}
+#container
+    {background-color:white;
+    padding:0;
+    margin:0 auto;
+    width:900px;
+    height:450px;}
+#First
+    {background-color:lightblue;
+    float:left;
+    height:150px;
+    width:500px;}
+#Second
+    {background-color: antiquewhite;
+    float:left;
+    height:150px;
+    width:500px;}
+a:link
+    {background-color: transparent;
+    text-decoration: none;}
+a:visited
+    {background-color: transparent;
+    text-decoration: none;}
+a:hover
+    {color:#527ecc;
+    background-color: transparent;
+    text-decoration: none}
+a:active
+    {color:white;
+    background-color: transparent;
+    text-decoration: underline}
