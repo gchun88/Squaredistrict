@@ -1,0 +1,210 @@
+[
+{
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+        "question_text": "What's up?",
+        "pub_date": "2018-03-03T09:04:40.581Z"
+    }
+},
+{
+    "model": "polls.question",
+    "pk": 2,
+    "fields": {
+        "question_text": "What's up?",
+        "pub_date": "2015-09-06T21:16:22Z"
+    }
+},
+{
+    "model": "polls.question",
+    "pk": 3,
+    "fields": {
+        "question_text": "\uc624\ub298 \uc6b0\ub9ac \uc7ac\ubbf8\uc788\uc5c8\ub098\uc694?",
+        "pub_date": "2018-03-11T05:56:17Z"
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 1,
+    "fields": {
+        "question": 1,
+        "choice_text": "Not much",
+        "votes": 5
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 2,
+    "fields": {
+        "question": 1,
+        "choice_text": "The sky",
+        "votes": 8
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 4,
+    "fields": {
+        "question": 3,
+        "choice_text": "\uc886\uac19\uc558\uc5b4\uc694 \uc65c\ud574\uc694?",
+        "votes": 5
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 5,
+    "fields": {
+        "question": 3,
+        "choice_text": "\uc9c0\ub8e8\ud588\uc9c0\ub9cc \ud574\uc57c\uc8e0\ubb50",
+        "votes": 2
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 6,
+    "fields": {
+        "question": 3,
+        "choice_text": "\ud574\ud0b9\uc774\ub098 \ud558\uc790",
+        "votes": 3
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 7,
+    "fields": {
+        "question": 3,
+        "choice_text": "\uc7a5\ub09c\ud558\ub2c8?",
+        "votes": 4
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 8,
+    "fields": {
+        "question": 3,
+        "choice_text": "\ub108\ubb34 \uc7ac\ubbf8 \uc788\uc5c8\uc5b4\uc694.",
+        "votes": 3
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 9,
+    "fields": {
+        "question": 3,
+        "choice_text": "\uc6c3\uacbc\uc5b4\uc694.",
+        "votes": 6
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$100000$pnqDg4hGDJbp$Zh5dZ94w555uf7LXmhGDf0BMfalX1zQyVuAUtuUIWHo=",
+        "last_login": "2018-03-03T09:28:03.495Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "gchun88@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-03-03T09:26:13.978Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$100000$XlfeGDgZ2BHO$8SHJAzSfrlKxOjQHZ5gdkqbzXYHz0XA2QP3fB8TTquE=",
+        "last_login": "2018-04-06T04:03:57.751Z",
+        "is_superuser": true,
+        "username": "gchun88",
+        "first_name": "",
+        "last_name": "",
+        "email": "gchun88@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-03-11T04:54:51.766Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "j9nj0ozgpa081tdamjnkv29h1sae2r85",
+    "fields": {
+        "session_data": "MDYxYTZhMTI0ZjczMWNkNjYwYzc4OGM5MGIxZTEwNDgxZTY1ODZkZTp7Il9hdXRoX3VzZXJfaGFzaCI6IjQwODJjYzdiMjM4ZjQ2YTEwZjk1NzcxNTY5OGRlZDE2OTE5ODhlMTciLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-03-25T04:55:31.286Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y3200kv0pbjanz5v4nsv08smp7rrof0r",
+    "fields": {
+        "session_data": "MjYxMTFiMGEyMmJiY2UzOGNmMjYzZjU1YmRlNmQ3ZTNmY2MwZDY1NTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTVjMzQyMTg4ZjBkNDMxOThjMWI4NmZmMzBkNjhiY2QwNTNiYzY0YiIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2018-03-17T09:28:03.499Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "z3eimjslrm1s5fotpe6fb8ufpbi53wlb",
+    "fields": {
+        "session_data": "MDYxYTZhMTI0ZjczMWNkNjYwYzc4OGM5MGIxZTEwNDgxZTY1ODZkZTp7Il9hdXRoX3VzZXJfaGFzaCI6IjQwODJjYzdiMjM4ZjQ2YTEwZjk1NzcxNTY5OGRlZDE2OTE5ODhlMTciLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-04-20T04:03:57.756Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2018-03-03T09:31:16.191Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "polls",
+            "question"
+        ],
+        "object_id": "2",
+        "object_repr": "What's up?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2018-03-11T04:56:20.760Z",
+        "user": [
+            "gchun88"
+        ],
+        "content_type": [
+            "polls",
+            "question"
+        ],
+        "object_id": "3",
+        "object_repr": "\uc624\ub298 \uc6b0\ub9ac \uc7ac\ubbf8\uc788\uc5c8\ub098\uc694?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2018-03-11T04:56:23.417Z",
+        "user": [
+            "gchun88"
+        ],
+        "content_type": [
+            "polls",
+            "question"
+        ],
+        "object_id": "3",
+        "object_repr": "\uc624\ub298 \uc6b0\ub9ac \uc7ac\ubbf8\uc788\uc5c8\ub098\uc694?",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}
+]
