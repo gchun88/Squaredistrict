@@ -19,9 +19,13 @@ from . import views
 from django.urls import include, path
 from django.contrib import admin
 
+
+
 urlpatterns = [
     path('', views.main, name='main'),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('auth/', include('social_django.urls', namespace='social')),
+    path('login/', views.login, name='login'),
 ]
 
