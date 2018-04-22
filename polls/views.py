@@ -1,4 +1,4 @@
-
+from django.contrib.auth import logout
 from django.shortcuts import render
 
 # Create your views here.
@@ -64,3 +64,6 @@ from django.shortcuts import get_object_or_404, render
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/results.html', {'question': question})
+
+def logout_view(request):
+    logout(request)

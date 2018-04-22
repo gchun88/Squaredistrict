@@ -16,8 +16,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='32113814922-csqtcr1qor1r5pmtj75hpf99e8mrpk8e.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET ='ek8OGZuEPObk2dKzTfHz4RBN'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -29,11 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-LOGIN_URL = '/login'
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL= '/'
-
-STATIC_URL = 'polls/static/'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'main'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='32113814922-csqtcr1qor1r5pmtj75hpf99e8mrpk8e.apps.googleusercontent.com'  #Paste CLient Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '' #Paste Secret Key
 
 TEMPLATES = [
     {
