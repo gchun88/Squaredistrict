@@ -2,46 +2,41 @@
 <html lang="en-US">
 
 <head>
+    <meta name="google-site-verification" content="Nj8ORk3zlTbJG04KlVysbXXxJOpuHHb9RCtOF9UjTmk" />
     <meta charset="utf-8"/>
     <title>CoinQual</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'coinqualstyle.css' %}">
+    <link rel="stylesheet" href="polls/coinqualstyle.css">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
-<header style="text-align:leftr">
-<p>
-    <a href="http://www.coinqual.com/" target="_self" class="logo">
-      <TH ALIGN="left"> <img src="{% static 'CQ.png' %}" style="width:250px;height:250px;" alt="CoinQual Logo">
-    </a>
-</p>
-
-</header>
-
 
 <header style="text-align:center">
     <p>
-    {% block content %}
-    {% if user.is_authenticated %}
-             <p class="display-4">Hello, {{ user.username }}</p>
-             <p> <a href="{% url 'logout' %}"> Logout </a></p>
-        {% else %}
-             <a class="lead" href="{% url 'login' %}">Log in</a>
-        {% endif %}
-{% endblock content %}
-
-
-{% load static %}
-</p>
+    <div style="text-align:center" class="g-signin2" data-onsuccess="onSignIn" data-theme="light" data-width="300" data-height="50" data-longtitle="true">Gbutton</div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
+    </p>
     <a href="http://www.coinqual.com/"target="_self"><h1 style="font-family:Verdana;font-size:300%;"><span style="color:#527ecc">C</span>oin<span style="color:#527ecc">Q</span>ual</h1></a>
-
     <a href="http://www.coinqual.com/polls"> <h1> Let's go to our Poll Site !</h1></a>
-    <h5>by Tyler, Ted, Chris, Daniel, Jaehui and Tuff </h5>
+    <h5>by Tyler, Ted, Chris, Jeonggyu, and Daniel </h5>
 
 </header>
 
-
-
-
-
+<body style="text-align:center;">
 <P>&nbsp;</P>
 <table>
     <table width="100%"border="1">

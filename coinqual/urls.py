@@ -23,5 +23,8 @@ urlpatterns = [
     path('', views.main, name='main'),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('login/', views.login, name='login'),
+    path('/', views.logout_view, name='logout'),
+    path('auth/', include('social_django.urls', namespace='social')),  # <- Here
 ]
 

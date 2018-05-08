@@ -15,8 +15,9 @@
     <p>No polls are available.</p>
 {% endif %}
 <p>
+{% load static %}
     <a href="http://www.coinqual.com/polls">
-        <img border ="0" alt="polls" src="./contacts.png">
+        <img border ="0" alt="polls" src="{% static 'contacts.png' %}">
     </a></p>
 </body>
 </html>
