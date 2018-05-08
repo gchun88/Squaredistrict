@@ -2,19 +2,23 @@
 <html lang="en-US">
 
 <head>
-    <meta name="google-site-verification" content="nN7avzxo1Y7h6JapQxTYZK7AFEk7_HthZKFs6a2XQwM" />
     <meta charset="utf-8"/>
     <title>CoinQual</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'coinqualstyle.css' %}">
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
+<header style="text-align:leftr">
+<p>
+    <a href="http://www.coinqual.com/" target="_self" class="logo">
+      <TH ALIGN="left"> <img src="{% static 'CQ.png' %}" style="width:250px;height:250px;" alt="CoinQual Logo">
+    </a>
+</p>
+
+</header>
+
 
 <header style="text-align:center">
     <p>
-    <div style="text-align:center" class="g-signin2" data-onsuccess="onSignIn" data-theme="light" data-width="300" data-height="50" data-longtitle="true">Gbutton</div>
     {% block content %}
     {% if user.is_authenticated %}
              <p class="display-4">Hello, {{ user.username }}</p>
@@ -25,13 +29,8 @@
 {% endblock content %}
 
 
-
-    </p>
-<p>
-    <a href="http://www.coinqual.com/" target="_self" class="logo">
-        <img src="./CQ.png">
-    </a></p>
-
+{% load static %}
+</p>
     <a href="http://www.coinqual.com/"target="_self"><h1 style="font-family:Verdana;font-size:300%;"><span style="color:#527ecc">C</span>oin<span style="color:#527ecc">Q</span>ual</h1></a>
 
     <a href="http://www.coinqual.com/polls"> <h1> Let's go to our Poll Site !</h1></a>
