@@ -31,3 +31,9 @@ a:active
     background-color: transparent;
     text-decoration: underline}
 
+
+img.logoimg{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
