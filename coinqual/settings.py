@@ -15,11 +15,18 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
+#google
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='32113814922-csqtcr1qor1r5pmtj75hpf99e8mrpk8e.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET ='ek8OGZuEPObk2dKzTfHz4RBN'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
+
+#coinbase
+SOCIAL_AUTH_COINBASE_KEY = '77d5af4941ffd6d5f0c9149e2e303a1c28d9f44c09b63694d6f2f608c60947c0'
+SOCIAL_AUTH_COINBASE_SECRET = '4395c36b93aa972ab4c6da2278cdca48f93e8551d0b13ee502552e249db90eb4'
+SOCIAL_AUTH_COINBASE_SCOPE = ['wallet:accounts:read']
+SOCIAL_AUTH_COINBASE_AUTH_EXTRA_ARGUMENTS = {'account': 'all'}
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'z=m6c&2(t3sh*)z72n9f+o_k3(97c1avl7tlrp3!1g1^!5rucs'
@@ -60,7 +67,8 @@ AUTHENTICATION_BACKENDS = (
  'social_core.backends.google.GoogleOAuth2',  # for Google authentication
  'social_core.backends.github.GithubOAuth2',  # for Github authentication
  'social_core.backends.facebook.FacebookOAuth2',  # for Facebook authentication
- 
+ 'social_core.backends.coinbase.BaseOAuth2', #for coinbase Auth
+'social_core.backends.coinbase.CoinbaseOAuth2',
  'django.contrib.auth.backends.ModelBackend',
 )
 # Application definition
