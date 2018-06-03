@@ -25,7 +25,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', views.login, name='login'),
     path('/', views.logout_view, name='logout'),
-    path('auth2/', include('social_django.urls', namespace='social')),  # <- Here
-    path('auth/complete/coinbase/', views.coinbaselog, name='coinbaselog'),
+
+    path('coinbase', views.coinbase, name='coinbase'),
+    path('auth/complete/coinbase/', views.main, name='coinbaselog'),
+#    path('auth/', include('social_django.urls', namespace='social')),  # <- Here
+#    path('auth/complete/coinbase/?*', views.home),
+#    path('auth/complete/coinbase/', views.coinbaselog, name='coinbaselog'),
 ]
 

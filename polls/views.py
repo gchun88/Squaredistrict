@@ -1,9 +1,11 @@
 from django.contrib.auth import logout
 from django.shortcuts import render
+from django.conf import settings
 
 # Create your views here.
 from django.http import HttpResponse
 from .models import Question
+import requests
 
 def detail(request, question_id):
     return HttpResponse("You're looking at question %s." % question_id)
@@ -67,3 +69,50 @@ def results(request, question_id):
 
 def logout_view(request):
     logout(request)
+
+
+
+def home(request):
+    response = requests.get('http://freegeoip.net/json/')
+    geodata = response.json()
+    return render(request, 'polls/home.html', {
+        'ip': geodata['ip'],
+        'country': geodata['country_name']
+    })
+
+
+from django.shortcuts import redirect
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+SOCIAL_AUTH_COINBASE_SCOPE = ['wallet:accounts:read:BTC']
+SOCIAL_AUTH_COINBASE_AUTH_EXTRA_ARGUMENTS = {'account': 'BTC'}
+
+
+
+from coinbase.wallet.client import Client
+import requests
+
+
+
+
+
+r=requests.get("https://www.coinbase.com/oauth/authorize?response_type=code&client_id="+ClientId+"&redirect_uri=http://www.coinqual.com/buy&state=SECURE_RANDOM&scope=wallet:accounts:read")
+code="f4243b8887b87cff93f5185d272d0f5f31e2a5a4df774bed28c0e9953ba17a6c"
+
+
+r2=requests.post("https://api.coinbase.com/oauth/token",data ={"grant_type":"authorization_code","code":code,"client_id":ClientId,"client_secret":clientsecret,"redirect_uri":"http://www.coinqual.com/buy"})
+
+r=requests.get("https://www.coinbase.com/oauth/authorize?response_type=code&client_id="+ClientId+"&redirect_uri=http://www.coinqual.com/buy&state=SECURE_RANDOM&scope=wallet:accounts:read")
+'''
+

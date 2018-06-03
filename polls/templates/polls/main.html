@@ -20,12 +20,14 @@
 <header style="text-align:center">
     <p>
     {% block content %}
+
     {% if user.is_authenticated %}
              <p class="display-4">Hello, {{ user.username }}</p>
              <p> <a href="{% url 'logout' %}"> Logout </a></p>
         {% else %}
              <a class="lead" href="{% url 'login' %}">Log in</a>
         {% endif %}
+        <p>{{ request.build_absolute_uri }}<a href = "{% url 'coinbase'%}"> IP page </a></p>
 {% endblock content %}
 
 
@@ -46,7 +48,6 @@
 
 
 
-<P>&nbsp;</P>
 <table>
     <table width="100%"border="1">
         <TR>
@@ -65,7 +66,16 @@
 <a href="https://www.coinbase.com/oauth/authorize?response_type=code&client_id=77d5af4941ffd6d5f0c9149e2e303a1c28d9f44c09b63694d6f2f608c60947c0&redirect_uri=http://www.coinqual.com/&state=SECURE_RANDOM&scope=wallet:accounts:read">Buy</a>
 <a href="http://www.google.com/">Sell</a>
 
-<P>&nbsp;</P>
+
+
+
+
+
+
+
+
+
+
 <footer>
     <p>© 2018 CoinQual</p>
     <div>+1 ($$$) $$$-$$$$</div>
