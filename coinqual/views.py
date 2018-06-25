@@ -60,5 +60,17 @@ def coinbase(request):
 
 
 
+from django.template import Context, RequestContext
+from django.shortcuts import render_to_response, get_object_or_404
+
+
+def cb_usr_code(request):
+    code1=request.GET.get('code')
+    context = {
+        'code1':code1
+    }
+    return render_to_response('polls/main.html', context, RequestContext(request))
+
+
 
 

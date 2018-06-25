@@ -24,10 +24,11 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('login/', views.login, name='login'),
-    path('/', views.logout_view, name='logout'),
+    path('', views.logout_view, name='logout'),
 
-    path('coinbase', views.coinbase, name='coinbase'),
-    path('auth/complete/coinbase/', views.main, name='coinbaselog'),
+    path('coinbase/', views.coinbase, name='coinbase'),
+#    path('auth/complete/coinbase/', views.main, name='coinbaselog'),
+    path('auth/complete/coinbase/', views.main, name='getcbcode'),
 #    path('auth/', include('social_django.urls', namespace='social')),  # <- Here
 #    path('auth/complete/coinbase/?*', views.home),
 #    path('auth/complete/coinbase/', views.coinbaselog, name='coinbaselog'),

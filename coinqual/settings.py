@@ -72,20 +72,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 
-AUTHENTICATION_BACKENDS = (
- 'social_core.backends.open_id.OpenIdAuth',  # for Google authentication
- #'social_core.backends.google.GoogleOpenId',  # for Google authentication
- #'social_core.backends.google.GoogleOAuth2',  # for Google authentication
- #'social_core.backends.github.GithubOAuth2',  # for Github authentication
- #'social_core.backends.facebook.FacebookOAuth2',  # for Facebook authentication
- #'social_core.backends.coinbase.BaseOAuth2', #for coinbase Auth
-#'social_core.backends.coinbase.CoinbaseOAuth2',
- #'django.contrib.auth.backends.ModelBackend',
-)
-# Application definition
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

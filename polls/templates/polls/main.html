@@ -22,16 +22,18 @@
     {% block content %}
 
     {% if user.is_authenticated %}
+        {{ request.build_absolute_uri }}
              <p class="display-4">Hello, {{ user.username }}</p>
              <p> <a href="{% url 'logout' %}"> Logout </a></p>
         {% else %}
+        {{ request.build_absolute_uri }}
              <a class="lead" href="{% url 'login' %}">Log in</a>
         {% endif %}
-        <p>{{ request.build_absolute_uri }}<a href = "{% url 'coinbase'%}"> IP page </a></p>
+        <p>{{ request.build_absolute_uri }} <a href = "{% url 'coinbase' %}"> IP page </a></p>
 {% endblock content %}
 
 
-
+<p>{{ code1 }}</p>
 
 
 
