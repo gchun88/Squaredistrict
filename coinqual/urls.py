@@ -18,6 +18,8 @@ from django.urls import path
 from . import views
 from django.urls import include, path
 from django.contrib import admin
+import polls.views as vw
+
 
 urlpatterns = [
     path('', views.main, name='main'),
@@ -28,9 +30,10 @@ urlpatterns = [
 
     path('coinbase/', views.coinbase, name='coinbase'),
 #    path('auth/complete/coinbase/', views.main, name='coinbaselog'),
-    path('auth/complete/coinbase/', views.main, name='getcbcode'),
+#    path('auth/complete/coinbase/', views.main, name='getcbcode'),
 #    path('auth/', include('social_django.urls', namespace='social')),  # <- Here
-#    path('auth/complete/coinbase/?*', views.home),
+    path('home/', vw.home),
+    path('auth/complete/coinbase/', views.cb_usr_code)
 #    path('auth/complete/coinbase/', views.coinbaselog, name='coinbaselog'),
 ]
 

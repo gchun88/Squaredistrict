@@ -29,8 +29,16 @@
         {{ request.build_absolute_uri }}
              <a class="lead" href="{% url 'login' %}">Log in</a>
         {% endif %}
-        <p>{{ request.build_absolute_uri }} <a href = "{% url 'coinbase' %}"> IP page </a></p>
+        <p>{{ request.build_absolute_uri }} <a href = "{% url 'coinbase' %}"> {ip} IP page </a></p>
 {% endblock content %}
+
+
+{% if request.build_absolute_uri == "/auth/complete/coinbase/?code=*" %}
+{{ request.build_absolute_uri }}
+{% else %}
+<p> not showing </p>
+{% endif %}
+
 
 
 <p>{{ code1 }}</p>
