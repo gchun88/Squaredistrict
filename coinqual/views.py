@@ -7,8 +7,8 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 from django.http import HttpResponse
 from django.conf import settings
-
-
+from coinbase.wallet.client import OAuthClient
+import json
 
 def main(request):
     return render(request, 'polls/main.html')
@@ -65,11 +65,32 @@ from django.shortcuts import render_to_response, get_object_or_404
 
 
 def cb_usr_code(request):
+    ClientId = settings.SOCIAL_AUTH_COINBASE_KEY
+    clientsecret = settings.SOCIAL_AUTH_COINBASE_SECRET
+    response = requests.get('http://freegeoip.net/json/')
+    geodata = response.json()
     code1=request.GET.get('code')
     context = {
         'code1':code1
     }
-    return render_to_response('polls/main.html', context, RequestContext(request))
+
+    r2=requests.post("https://api.coinbase.com/oauth/token",data={"grant_type":"authorization_code","code":code1,"client_id":ClientId,"client_secret":clientsecret,"redirect_uri":"http://127.0.0.1:8000/auth/complete/coinbase/"})
+    cbAFtoken=r2.json()
+    client=OAuthClient(cbAFtoken['access_token'],cbAFtoken['refresh_token'])
+#    user = client.get_current_user()
+#    user_as_json_string = json.dumps(user)
+    user=client.get_current_user().name
+    price=client.get_spot_price()
+
+    return render_to_response('polls/home.html', {
+        'ip': geodata['ip'],
+        'country': geodata['country_name'],
+        'code1':code1,
+        'user':user,
+        'price':price.amount
+    }
+        ,
+        RequestContext(request))
 
 
 
