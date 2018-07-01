@@ -33,7 +33,12 @@ urlpatterns = [
 #    path('auth/complete/coinbase/', views.main, name='getcbcode'),
 #    path('auth/', include('social_django.urls', namespace='social')),  # <- Here
     path('home/', vw.home),
-    path('auth/complete/coinbase/', views.cb_usr_code)
+    path('auth/complete/coinbase/', views.cb_usr_code),
 #    path('auth/complete/coinbase/', views.coinbaselog, name='coinbaselog'),
+
+#Account URls
+#    path('admin/', include(admin.site.urls)),
+    path('account/', include('account.urls')),
+
 ]
 

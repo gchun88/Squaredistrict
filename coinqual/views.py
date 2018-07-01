@@ -9,6 +9,8 @@ from django.http import HttpResponse
 from django.conf import settings
 from coinbase.wallet.client import OAuthClient
 import json
+import coinbase
+
 
 def main(request):
     return render(request, 'polls/main.html')
