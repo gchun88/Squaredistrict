@@ -1,8 +1,8 @@
 from django.conf.urls import url
-from . import views
-from django.urls import include, path
+#from . import views
+#from django.urls import include, path
 
-urlpatterns = [
+#urlpatterns = [
     # post views
-    path('login/', views.user_login, name='login'),
-]
+    #path('login/', views.user_login, name='login'),
+#]
