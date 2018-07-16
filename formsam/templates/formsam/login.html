@@ -1,0 +1,23 @@
+<html>
+   <body>
+
+      <form name = "form" action = "{% url 'formsam:loggedinaf' %}"
+         method = "POST" >{% csrf_token %}
+
+               <input type = "text"
+                  placeholder = "Identifiant" name = "username" value='{{ username }}'/>
+
+               <input type = "password"
+                  placeholder = "password" name = "password" value='{{ password }}'/>
+
+
+               <button type = "submit"
+                  value = "Login" >
+                  <strong>Login</strong>
+               </button>
+
+      </form>
+      <p> {{ username }}</p>
+
+   </body>
+</html>

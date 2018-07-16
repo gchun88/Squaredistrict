@@ -75,13 +75,15 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
-    #'account.apps.AccountConfig',
+    'account.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'formsam',
+    'usersignup',
     #'social_django',
 
 ]
