@@ -6,16 +6,22 @@
     <title>CoinQual</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'coinqualstyle.css' %}">
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows Into Light">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <!-- Draft icon for Web -->
+    <link rel="icon" type="image/png" href="{% static 'Icon.png' %}" sizes="16x16"/>
 </head>
-<header style="text-align:leftr">
+
+<header style="text-align:left">
 <p>
     <a href="http://www.coinqual.com/" target="_self" class="logo">
-      <TH ALIGN="left"> <img src="{% static 'CQ.png' %}" style="width:250px;height:250px;" class="logoimg" alt="CoinQual Logo">
+      <TH ALIGN="left"> <img src="{% static 'CQ.png' %}" style="width:200px;height:200px;" class="logoimg" alt="CoinQual Logo">
     </a>
 </p>
-
 </header>
-
 
 <header style="text-align:center">
     <p>
@@ -32,59 +38,64 @@
         <p>{{ request.build_absolute_uri }} <a href = "{% url 'coinbase' %}"> {ip} IP page </a></p>
 {% endblock content %}
 
-
 {% if request.build_absolute_uri == "/auth/complete/coinbase/?code=*" %}
 {{ request.build_absolute_uri }}
 {% else %}
 <p> not showing </p>
 {% endif %}
 
-
-
 <p>{{ code1 }}</p>
-
-
 
 {% load static %}
 </p>
-    <a href="http://www.coinqual.com/"target="_self"><h1 style="font-family:Verdana;font-size:300%;"><span style="color:#527ecc">C</span>oin<span style="color:#527ecc">Q</span>ual</h1></a>
-
+    <!-- This font is conneted with google fonts -->
+    <a href="http://www.coinqual.com/"target="_self"><h1 style="font-family:Shadows Into Light;font-size:400%;"><span style="color:#527ecc">C</span>oin<span style="color:#527ecc">Q</span>ual</h1></a>
     <a href="http://www.coinqual.com/polls"> <h1> Let's go to our Poll Site !</h1></a>
-    <h5>by Tyler, Ted, Chris, Daniel, Jaehui and Tuff </h5>
+    <h5>by Tyler, Tuff, Daniel, and Jaehui </h5>
 
 </header>
 
-
-
-
+<body>
 
 <table>
     <table width="100%"border="1">
         <TR>
             <TH ALIGN="CENTER"><div id="Table">About</div></TH>
-            <TH ALIGN="CENTER"><div id="Table">Trade</div></TH>
-            <TH ALIGN="CENTER"><div id="Table">News</div></TH>
+            <TH ALIGN="CENTER"><div id="Table">
+                <button type="button" class="btn btn-primary">Trade <span class="badge badge-light"> 2</span>
+                </button>
+            </div></TH>
+            <TH ALIGN="CENTER"><div id="Table">
+                <a href="https://news.google.com/search?q=coinbase&hl=en-US&gl=US&ceid=US%3Aen" <button type="button" class="btn btn-primary">News <span class="badge badge-light"> 4</span>
+            </button></a>
+            </div></TH>
             <TH ALIGN="CENTER"><div id="Table">Charts</div></TH>
         </TR>
     </table>
 </table>
 <P>&nbsp;</P>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" name="firstname" value="Daniel">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Bae">
+        <br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
 <div id="container">
-    <div id="First"><p title="will be updated soon">First Charts and Graph</p></div>
-    <div id="Second"><p title="will be updated soon">Second Charts and Graph</p></div>
+    <div id="First"><p title="Will be updated soon">First Charts and Graph</p></div>
+    <div id="Second"><p title="Will be updated soon">Second Charts and Graph</p></div>
 </div>
 <a href="https://www.coinbase.com/oauth/authorize?response_type=code&client_id=77d5af4941ffd6d5f0c9149e2e303a1c28d9f44c09b63694d6f2f608c60947c0&redirect_uri=http://www.coinqual.com/&state=SECURE_RANDOM&scope=wallet:accounts:read">Buy</a>
 <a href="http://www.google.com/">Sell</a>
 
-
-
-
-
-
-
-
-
-
+</body>
 
 <footer>
     <p>© 2018 CoinQual</p>
@@ -94,7 +105,6 @@
         <a href="mailto:eocjf17@gmail.com">Support.CoinQual.com</a>
     </p>
 </footer>
-</body>
 
 </html>
 

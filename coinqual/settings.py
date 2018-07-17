@@ -74,6 +74,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 INSTALLED_APPS = [
+    'bootstrap3.bootstrap', #I'm not sure whether it's right or wrong :)
+    'formsam.apps.FormsamConfig',
     'polls.apps.PollsConfig',
     'account.apps.AccountConfig',
     'django.contrib.admin',
@@ -94,6 +96,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+
 ]
 
 ROOT_URLCONF = 'coinqual.urls'
@@ -126,13 +130,6 @@ DATABASES = {
 #}
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
-
-
-
-
-
-
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {

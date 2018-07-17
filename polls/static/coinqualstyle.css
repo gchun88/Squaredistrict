@@ -4,18 +4,18 @@
     {background-color:white;
     padding:0;
     margin:0 auto;
-    width:900px;
+    width:450px;
     height:450px;}
 #First
     {background-color:lightblue;
     float:left;
     height:150px;
-    width:500px;}
+    width:150px;}
 #Second
     {background-color: antiquewhite;
     float:left;
     height:150px;
-    width:500px;}
+    width:150px;}
 a:link
     {background-color: transparent;
     text-decoration: none;}
@@ -31,8 +31,7 @@ a:active
     background-color: transparent;
     text-decoration: underline}
 
-
-img.logoimg{
+.logoimg{
     display:block;
     margin-left: auto;
     margin-right: auto;

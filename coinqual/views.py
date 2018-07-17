@@ -14,17 +14,13 @@ import coinbase
 
 def main(request):
     return render(request, 'polls/main.html')
+
 def login(request):
     return render(request, 'polls/login.html')
 
 def logout_view(request):
     logout(request)
     return render(request, 'polls/main.html')
-
-
-
-
-
 
 from django import template
 register = template.Library()
@@ -33,24 +29,10 @@ register = template.Library()
 def settings_value(name):
     return getattr(settings, name, "")
 
-
-
 from django.conf import settings #for getting settings vars
-
-
-
-
-
-
-
-
 
 from django.conf import settings
 import requests
-
-
-
-
 
 def coinbase(request):
     ClientId = settings.SOCIAL_AUTH_COINBASE_KEY
@@ -60,11 +42,8 @@ def coinbase(request):
                             "&redirect_uri=http://127.0.0.1:8000/auth/complete/coinbase/&state=SECURE_RANDOM&scope=wallet:accounts:read")
     return redirect(response.url)
 
-
-
 from django.template import Context, RequestContext
 from django.shortcuts import render_to_response, get_object_or_404
-
 
 def cb_usr_code(request):
     ClientId = settings.SOCIAL_AUTH_COINBASE_KEY
@@ -93,7 +72,3 @@ def cb_usr_code(request):
     }
         ,
         RequestContext(request))
-
-
-
-
