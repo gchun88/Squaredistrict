@@ -74,6 +74,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 INSTALLED_APPS = [
+    'bootstrap3.bootstrap',
     'polls.apps.PollsConfig',
     'account.apps.AccountConfig',
     'django.contrib.admin',
