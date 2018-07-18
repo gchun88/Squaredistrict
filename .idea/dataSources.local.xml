@@ -4,5 +4,9 @@
     <data-source name="new_file" uuid="7dbb43c3-3d41-4046-b612-b10994b88e7b">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
+    <data-source name="db" uuid="77dfdb0c-3f75-4932-bb85-14621c271f54">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <introspection-schemas>*:</introspection-schemas>
+    </data-source>
   </component>
 </project>
