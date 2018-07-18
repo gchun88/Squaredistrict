@@ -82,6 +82,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'formsam',
+    'usersignup',
     #'social_django',
 
 ]
