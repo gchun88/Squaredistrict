@@ -14,13 +14,18 @@ import coinbase
 
 def main(request):
     return render(request, 'polls/main.html')
+
+
+
+
+'''
 def login(request):
     return render(request, 'polls/login.html')
 
 def logout_view(request):
     logout(request)
     return render(request, 'polls/main.html')
-
+'''
 
 
 

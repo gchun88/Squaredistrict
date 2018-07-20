@@ -20,14 +20,23 @@ from django.urls import include, path
 from django.contrib import admin
 import polls.views as vw
 from django.views.generic import TemplateView
+from django.contrib.auth import logout
+
+
+from django.contrib.auth import views as viewslo
+
+
+
+
 
 
 urlpatterns = [
     path('', views.main, name='main'),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    path('login/', views.login, name='login'),
-    path('', views.logout_view, name='logout'),
+#    path('login/', views.login, name='login'),
+
+
     path('coinbase/', views.coinbase, name='coinbase'),
 #    path('auth/complete/coinbase/', views.main, name='coinbaselog'),
 #    path('auth/complete/coinbase/', views.main, name='getcbcode'),
@@ -37,9 +46,9 @@ urlpatterns = [
 #    path('auth/complete/coinbase/', views.coinbaselog, name='coinbaselog'),
 #Account URls
 #    path('admin/', include(admin.site.urls)),
-    path('account/', include('account.urls')),
-    path('formsam/', include('formsam.urls')),
-    path('usersignup/', include('usersignup.urls')),
+#    path('account/', include('account.urls')),
+#    path('formsam/', include('formsam.urls')),
+#    path('usersignup/', include('usersignup.urls')),
 
 ]
 

@@ -7,15 +7,15 @@ from django.http import HttpResponse
 from .models import Question
 import requests
 
-def detail(request, question_id):
-    return HttpResponse("You're looking at question %s." % question_id)
+from django.contrib.auth import login, authenticate
+from django.shortcuts import render, redirect
+from .forms import SignUpForm
 
-def results(request, question_id):
-    response = "You're looking at the results of question %s."
-    return HttpResponse(response % question_id)
+from django.http import HttpResponse
+from django.shortcuts import render
+from polls.forms import LoginForm
 
-def vote(request, question_id):
-    return HttpResponse("You're voting on question %s." % question_id)
+
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     context = {'latest_question_list': latest_question_list}
@@ -69,6 +69,7 @@ def results(request, question_id):
 
 def logout_view(request):
     logout(request)
+    return render(request,'polls/main.html',{})
 
 
 
@@ -86,6 +87,94 @@ from django.shortcuts import redirect
 
 
 
+
+# Create your views here.
+
+
+def user_login(request):
+    form = LoginForm()
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+
+            user = authenticate(username=cd['username'],
+                                password=cd['password'])
+            if user is not None:
+                if user.is_active:
+                    login(request, user)
+                    return HttpResponse('Authenticated', 'successfully')
+                else:
+                    return HttpResponse('Disabled account')
+
+            else:
+                return HttpResponse('Invalid login')
+        else:
+            form = LoginForm()
+    return render(request, 'polls/lgin.html', {
+        'form': form
+    })
+
+def loggedin(request):
+    return render(request, 'polls/loggedin.html', {})
+
+
+
+
+from django.http import HttpResponse
+from django.shortcuts import render
+from .forms import LoginForm
+
+
+'''
+def login(request):
+    username = ""
+
+    if request.method == "POST":
+        # Get the posted form
+        MyLoginForm = LoginForm(request.POST)
+
+        if MyLoginForm.is_valid():
+            username = MyLoginForm.cleaned_data['username']
+    else:
+        MyLoginForm = LoginForm()
+
+    return render(request, 'polls/login.html', {'username': username})
+
+
+def status(request):
+    username = request.POST['username']
+    password = request.POST['password']
+    return render(request, "polls/loggedin.html", {'username':username, 'password':password})
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def usersignup(request):
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('main')
+    else:
+        form = SignUpForm()
+    return render(request, 'polls/signup.html', {'form': form})
 
 
 
