@@ -74,6 +74,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 INSTALLED_APPS = [
+    'cquser.apps.CquserConfig',
 #    'bootstrap3.bootstrap',
     'polls.apps.PollsConfig',
     'django.contrib.admin',

@@ -1,19 +1,19 @@
 from django.contrib.auth import logout
-from django.shortcuts import render
+from django.shortcuts import render, reverse
 from django.conf import settings
 
 # Create your views here.
-from django.http import HttpResponse
-from .models import Question
+from django.http import HttpResponseRedirect
+from .models import Question, Choice
 import requests
 
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
-from .forms import SignUpForm
+
 
 from django.http import HttpResponse
 from django.shortcuts import render
-from polls.forms import LoginForm
+
 
 
 def index(request):
@@ -22,27 +22,13 @@ def index(request):
     return render(request, 'polls/index.html', context)
 
 
-from django.http import Http404
-from django.shortcuts import render
-
-from .models import Question
-# ...
-from django.shortcuts import get_object_or_404, render
-
-from .models import Question
-
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/detail.html', {'question': question})
 
 
 
-from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponseRedirect, HttpResponse
-from django.urls import reverse
 
-from .models import Choice, Question
-# ...
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
@@ -67,11 +53,6 @@ def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/results.html', {'question': question})
 
-def logout_view(request):
-    logout(request)
-    return render(request,'polls/main.html',{})
-
-
 
 def home(request):
     response = requests.get('http://freegeoip.net/json/')
@@ -82,48 +63,8 @@ def home(request):
     })
 
 
-from django.shortcuts import redirect
 
 
-
-
-
-# Create your views here.
-
-
-def user_login(request):
-    form = LoginForm()
-    if request.method == 'POST':
-        form = LoginForm(request.POST)
-        if form.is_valid():
-            cd = form.cleaned_data
-
-            user = authenticate(username=cd['username'],
-                                password=cd['password'])
-            if user is not None:
-                if user.is_active:
-                    login(request, user)
-                    return HttpResponse('Authenticated', 'successfully')
-                else:
-                    return HttpResponse('Disabled account')
-
-            else:
-                return HttpResponse('Invalid login')
-        else:
-            form = LoginForm()
-    return render(request, 'polls/lgin.html', {
-        'form': form
-    })
-
-def loggedin(request):
-    return render(request, 'polls/loggedin.html', {})
-
-
-
-
-from django.http import HttpResponse
-from django.shortcuts import render
-from .forms import LoginForm
 
 
 '''
@@ -160,21 +101,6 @@ def status(request):
 
 
 
-
-
-def usersignup(request):
-    if request.method == 'POST':
-        form = SignUpForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            return redirect('main')
-    else:
-        form = SignUpForm()
-    return render(request, 'polls/signup.html', {'form': form})
 
 
 

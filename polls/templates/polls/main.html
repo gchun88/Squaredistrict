@@ -26,14 +26,14 @@
 <header style="text-align:center">
     <p>
     {% block content %}
-
     {% if user.is_authenticated %}
         {{ request.build_absolute_uri }}
              <p class="display-4">Hello, {{ user.username }}</p>
-             <p> <a href="{% url 'polls:logout' %}"> Logout </a></p>
+             <p> <a href="{% url 'cquser:logout' %}"> Logout </a></p>
         {% else %}
         {{ request.build_absolute_uri }}
-             <a class="lead" href="{% url 'polls:login' %}">Log in</a>
+        <p><a class="lead" href="{% url 'cquser:signup' %}">SignUp</a></p>
+            <p><a class="lead" href="{% url 'cquser:login' %}">Log in</a></p>
         {% endif %}
         <p>{{ request.build_absolute_uri }} <a href = "{% url 'coinbase' %}"> {ip} IP page </a></p>
 {% endblock content %}
@@ -75,18 +75,6 @@
 </table>
 <P>&nbsp;</P>
 
-    <form action="/action_page.php">
-      <fieldset>
-        <legend>Personal information:</legend>
-        First name:<br>
-        <input type="text" name="firstname" value="Daniel">
-        <br>
-        Last name:<br>
-        <input type="text" name="lastname" value="Bae">
-        <br><br>
-        <input type="submit" value="Submit">
-      </fieldset>
-    </form>
 
 <div id="container">
     <div id="First"><p title="Will be updated soon">First Charts and Graph</p></div>

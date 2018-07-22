@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'polls/main.html' %}
+
+
+{% block content %}
+    {% if user.is_authenticated %}
+        {{ form.user.bound_data }}
+        <p>it worked finally {{ user.username }}</p>
+        {{ request.build_absolute_uri }}
+             <p class="display-4">Hello, {{ user.username }}</p>
+             <p> <a href="{% url 'cquser:logout' %}"> Logout </a></p>
+    {% else %}
+        <p>it doesn't work. work harder</p>
+        {{ request.build_absolute_uri }}
+             <a class="lead" href="{% url 'cquser:login' %}">Log in</a>
+    {% endif %}
+        <p>{{ request.build_absolute_uri }} <a href = "{% url 'coinbase' %}"> {ip} IP page </a></p>
+{% endblock content %}
+
+
+</body>
+</html>

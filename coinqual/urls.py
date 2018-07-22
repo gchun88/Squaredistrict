@@ -49,6 +49,7 @@ urlpatterns = [
 #    path('account/', include('account.urls')),
 #    path('formsam/', include('formsam.urls')),
 #    path('usersignup/', include('usersignup.urls')),
+    path('cquser/',include('cquser.urls')),
 
 ]
 

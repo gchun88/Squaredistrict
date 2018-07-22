@@ -10,10 +10,13 @@ from django.conf import settings
 from coinbase.wallet.client import OAuthClient
 import json
 import coinbase
+from cquser.forms import LoginForm
+from django.contrib.auth import login, authenticate
+
 
 
 def main(request):
-    return render(request, 'polls/main.html')
+    return render(request, 'polls/main.html',{})
 
 
 
