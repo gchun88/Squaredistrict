@@ -10,8 +10,8 @@ from django.contrib.auth.models import User
 
 
 class LoginForm(forms.Form):
-    user = forms.CharField(max_length=100)
-    password = forms.CharField(widget=forms.PasswordInput())
+    username = forms.CharField(label="username",max_length=20,required=True)
+    password = forms.CharField(label="password",widget=forms.PasswordInput, required=True)
 
 class SignUpForm(UserCreationForm):
     birth_date = forms.DateField(help_text='Required. Format: YYYY-MM-DD')

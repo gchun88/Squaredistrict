@@ -16,6 +16,10 @@
              <p class="display-4">Hello, {{ user.username }}</p>
              <p> <a href="{% url 'cquser:logout' %}"> Logout </a></p>
     {% else %}
+        {{form.username.error}}
+        {{form.password.error}}
+        {{form.fieldname.error|striptags}}
+        {{form.error}}
         <p>it doesn't work. work harder</p>
         {{ request.build_absolute_uri }}
              <a class="lead" href="{% url 'cquser:login' %}">Log in</a>

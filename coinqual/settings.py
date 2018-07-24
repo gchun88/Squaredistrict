@@ -73,7 +73,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 
+
+
 INSTALLED_APPS = [
+    'django_extensions',
+    'sslserver',
+    'djangosecure',
     'cquser.apps.CquserConfig',
 #    'bootstrap3.bootstrap',
     'polls.apps.PollsConfig',
@@ -87,8 +92,9 @@ INSTALLED_APPS = [
 
 ]
 
+
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -96,6 +102,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+MIDDLEWARE_CLASSES=(
+    'djangosecure.middleware.SecurityMiddleware',
+)
+
+SECURE_SSL_REDIRECT = False
+
 
 ROOT_URLCONF = 'coinqual.urls'
 

@@ -31,23 +31,27 @@ def try1(request):
     form = LoginForm()
     if request.method == 'POST':
         form = LoginForm(request.POST)
-        username = request.POST['username']
-        password = request.POST['password']
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+#        username = request.POST['username']
+#        password = request.POST['password']
 
-        user = authenticate(username=username,
+            user = authenticate(username=username,
                                 password=password)
-        if user is not None:
-            if user.is_active:
-                login(request, user)
-                return render(request, 'cquser/try.html', {'form': form})
-            else:
-                return HttpResponse('Disabled account')
+            if user is not None:
+                if user.is_active:
+                    login(request, user)
+                    return render(request, 'cquser/try.html', {'form': form})
+                else:
+                    return HttpResponse('Disabled account')
 
         else:
-            return HttpResponse('Invalid login')
+            form = LoginForm(request.POST)
+            return render(request, 'cquser/try.html',{'form':form})
     else:
         form = LoginForm()
-        return redirect('/login/')
+        return render(request, 'cquser/try.html',{'form':form})
 
 
 
