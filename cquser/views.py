@@ -1,6 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login, authenticate, logout
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect, HttpResponse, HttpResponseRedirect, reverse
 
 
 
@@ -42,7 +42,7 @@ def try1(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return render(request, 'cquser/try.html', {'form': form})
+                    return render(request,'cquser/try.html', {'form': form})
                 else:
                     return HttpResponse('Disabled account')
 
