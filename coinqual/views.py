@@ -65,7 +65,7 @@ def coinbase(request):
     clientsecret = settings.SOCIAL_AUTH_COINBASE_SECRET
     response = requests.get("https://www.coinbase.com/oauth/authorize?response_type=code&client_id="+
                             ClientId+
-                            "&redirect_uri=http://127.0.0.1:8000/auth/complete/coinbase/&state=SECURE_RANDOM&scope=wallet:accounts:read")
+                            "&redirect_uri=http://127.0.0.1:8000/auth/complete/coinbase/&account=all&state=SECURE_RANDOM&scope=wallet:accounts:update wallet:accounts:create wallet:accounts:delete wallet:accounts:read wallet:addresses:create wallet:addresses:read wallet:buys:create wallet:buys:read wallet:checkouts:create wallet:checkouts:read wallet:contacts:read wallet:deposits:create wallet:deposits:read wallet:notifications:read wallet:orders:create wallet:orders:read wallet:orders:refund wallet:payment-methods:delete wallet:payment-methods:limits wallet:payment-methods:read wallet:sells:create wallet:sells:read wallet:transactions:read wallet:transactions:request wallet:transactions:transfer wallet:user:email wallet:user:read wallet:user:update wallet:withdrawals:create wallet:withdrawals:read")
     return redirect(response.url)
 
 
