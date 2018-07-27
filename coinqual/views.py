@@ -93,8 +93,8 @@ def cb_usr_code(request):
     price=client.get_spot_price()
 
     return render_to_response('polls/home.html', {
-        'ip': geodata['ip'],
-        'country': geodata['country_name'],
+#        'ip': geodata['ip'],
+#        'country': geodata['country_name'],
         'code1':code1,
         'user':user,
         'price':price.amount
