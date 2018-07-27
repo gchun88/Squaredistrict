@@ -12,7 +12,7 @@ from django.conf import settings
 class user_token(models.Model):
     access_token=models.CharField(max_length=80)
     refresh_token=models.CharField(max_length=80)
-    user=models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=True)
+    user=models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     
     def __str__(self):
