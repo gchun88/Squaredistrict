@@ -76,9 +76,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 INSTALLED_APPS = [
-    'django_extensions',
-    'sslserver',
-    'djangosecure',
+#    'django_extensions',
+#    'sslserver',
+#    'djangosecure',
     'cquser.apps.CquserConfig',
 #    'bootstrap3.bootstrap',
     'polls.apps.PollsConfig',
