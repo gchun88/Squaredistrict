@@ -2,7 +2,371 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9a1a25-cee9-4555-9898-982f44f50083" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Squaredistrict1.iml" afterPath="$PROJECT_DIR$/.idea/Squaredistrict1.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/coinqual/settings.py" afterPath="$PROJECT_DIR$/coinqual/settings.py" />
+      <change beforePath="$PROJECT_DIR$/coinqual/views.py" afterPath="$PROJECT_DIR$/coinqual/views.py" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/planner/models.py" afterPath="$PROJECT_DIR$/planner/models.py" />
+      <change beforePath="$PROJECT_DIR$/planner/tasks.py" afterPath="$PROJECT_DIR$/planner/tasks.py" />
+      <change beforePath="$PROJECT_DIR$/polls/templates/polls/detail.html" afterPath="$PROJECT_DIR$/polls/templates/polls/detail.html" />
+      <change beforePath="$PROJECT_DIR$/polls/templates/polls/results.html" afterPath="$PROJECT_DIR$/polls/templates/polls/results.html" />
+      <change beforePath="$PROJECT_DIR$/polls/views.py" afterPath="$PROJECT_DIR$/polls/views.py" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate" afterPath="$PROJECT_DIR$/venv/bin/activate" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" afterPath="$PROJECT_DIR$/venv/bin/activate.csh" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" afterPath="$PROJECT_DIR$/venv/bin/activate.fish" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/chardetect" afterPath="$PROJECT_DIR$/venv/bin/chardetect" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/django-admin" afterPath="$PROJECT_DIR$/venv/bin/django-admin" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/django-admin.py" afterPath="$PROJECT_DIR$/venv/bin/django-admin.py" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" afterPath="$PROJECT_DIR$/venv/bin/easy_install" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-3.6" afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.6" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip" afterPath="$PROJECT_DIR$/venv/bin/pip" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" afterPath="$PROJECT_DIR$/venv/bin/pip3" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip3.6" afterPath="$PROJECT_DIR$/venv/bin/pip3.6" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python-config" afterPath="$PROJECT_DIR$/venv/bin/python-config" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/wheel" afterPath="$PROJECT_DIR$/venv/bin/wheel" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/AES.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/AES.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_ARC4.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_ARC4.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_Salsa20.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_Salsa20.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_chacha20.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_chacha20.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_mode_cbc.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_mode_cbc.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_mode_cfb.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_mode_cfb.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_mode_gcm.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_mode_gcm.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_mode_ofb.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_mode_ofb.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_aes.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_aes.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_aesni.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_aesni.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_arc2.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_arc2.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_blowfish.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_blowfish.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_cast.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_cast.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_cbc.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_cbc.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_cfb.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_cfb.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_ctr.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_ctr.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_des.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_des.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_des3.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_des3.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_ecb.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_ecb.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_ocb.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_ocb.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_ofb.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Cipher/_raw_ofb.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_BLAKE2b.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_BLAKE2b.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_BLAKE2s.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_BLAKE2s.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_MD2.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_MD2.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_MD4.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_MD4.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_MD5.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_MD5.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_RIPEMD160.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_RIPEMD160.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA1.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA1.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA224.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA224.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA256.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA256.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA384.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA384.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA512.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_SHA512.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_ghash_clmul.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_ghash_clmul.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_ghash_portable.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_ghash_portable.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_keccak.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Hash/_keccak.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Math/_montgomery.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Math/_montgomery.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Protocol/_scrypt.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Protocol/_scrypt.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/common.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/common.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_AES.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_AES.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_GCM.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_GCM.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCGFSbox128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCGFSbox128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCGFSbox192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCGFSbox192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCGFSbox256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCGFSbox256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCKeySbox128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCKeySbox128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCKeySbox192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCKeySbox192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCKeySbox256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCKeySbox256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMCT128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMCT128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMCT192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMCT192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMCT256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMCT256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMMT128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMMT128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMMT192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMMT192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMMT256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCMMT256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarKey128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarKey128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarKey192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarKey192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarKey256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarKey256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarTxt128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarTxt128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarTxt192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarTxt192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarTxt256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CBCVarTxt256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128GFSbox128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128GFSbox128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128GFSbox192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128GFSbox192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128GFSbox256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128GFSbox256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128KeySbox128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128KeySbox128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128KeySbox192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128KeySbox192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128KeySbox256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128KeySbox256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MCT128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MCT128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MCT192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MCT192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MCT256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MCT256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MMT128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MMT128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MMT192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MMT192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MMT256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128MMT256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarKey128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarKey128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarKey192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarKey192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarKey256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarKey256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarTxt128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarTxt128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarTxt192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarTxt192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarTxt256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB128VarTxt256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8GFSbox128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8GFSbox128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8GFSbox192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8GFSbox192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8GFSbox256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8GFSbox256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8KeySbox128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8KeySbox128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8KeySbox192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8KeySbox192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8KeySbox256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8KeySbox256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MCT128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MCT128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MCT192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MCT192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MCT256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MCT256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MMT128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MMT128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MMT192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MMT192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MMT256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8MMT256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarKey128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarKey128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarKey192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarKey192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarKey256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarKey256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarTxt128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarTxt128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarTxt192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarTxt192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarTxt256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/CFB8VarTxt256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBGFSbox128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBGFSbox128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBGFSbox192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBGFSbox192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBGFSbox256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBGFSbox256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBKeySbox128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBKeySbox128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBKeySbox192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBKeySbox192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBKeySbox256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBKeySbox256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMCT128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMCT128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMCT192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMCT192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMCT256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMCT256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMMT128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMMT128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMMT192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMMT192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMMT256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBMMT256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarKey128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarKey128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarKey192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarKey192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarKey256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarKey256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarTxt128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarTxt128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarTxt192.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarTxt192.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarTxt256.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/OFBVarTxt256.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/gcmDecrypt128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/gcmDecrypt128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/gcmEncryptExtIV128.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/AES/gcmEncryptExtIV128.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCMMT2.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCMMT2.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCMMT3.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCMMT3.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCinvperm.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCinvperm.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCpermop.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCpermop.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCsubtab.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCsubtab.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCvarkey.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCvarkey.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCvartext.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCBCvartext.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64MMT2.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64MMT2.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64MMT3.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64MMT3.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64invperm.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64invperm.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64permop.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64permop.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64subtab.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64subtab.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64varkey.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64varkey.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64vartext.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB64vartext.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8MMT2.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8MMT2.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8MMT3.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8MMT3.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8invperm.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8invperm.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8permop.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8permop.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8subtab.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8subtab.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8varkey.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8varkey.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8vartext.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TCFB8vartext.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TECBMMT2.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TECBMMT2.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TECBMMT3.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TECBMMT3.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBMMT2.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBMMT2.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBMMT3.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBMMT3.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBinvperm.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBinvperm.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBpermop.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBpermop.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBsubtab.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBsubtab.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBvarkey.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBvarkey.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBvartext.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Cipher/test_vectors/TDES/TOFBvartext.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA1/SHA1ShortMsg.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA1/SHA1ShortMsg.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA2/SHA512ShortMsg.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA2/SHA512ShortMsg.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA2/SHA512_224ShortMsg.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA2/SHA512_224ShortMsg.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA2/SHA512_256ShortMsg.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA2/SHA512_256ShortMsg.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/DSA/FIPS_186_3_SigGen.txt" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/DSA/FIPS_186_3_SigGen.txt" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/DSA/FIPS_186_3_SigVer.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/DSA/FIPS_186_3_SigVer.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/ECDSA/SigGen.txt" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/ECDSA/SigGen.txt" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/ECDSA/SigVer.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/ECDSA/SigVer.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-PSS/SigGenPSS_186-2.txt" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-PSS/SigGenPSS_186-2.txt" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-PSS/SigGenPSS_186-3.txt" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-PSS/SigGenPSS_186-3.txt" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-PSS/SigVerPSS_186-3.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-PSS/SigVerPSS_186-3.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-v1.5/SigGen15_186-2.txt" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-v1.5/SigGen15_186-2.txt" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-v1.5/SigGen15_186-3.txt" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-v1.5/SigGen15_186-3.txt" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-v1.5/SigVer15_186-3.rsp" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/SelfTest/Signature/test_vectors/PKCS1-v1.5/SigVer15_186-3.rsp" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Util/_cpuid.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Util/_cpuid_c.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Util/_cpuid_c.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Util/_raw_api.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Util/_raw_api.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Util/_strxor.cpython-36m-darwin.so" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/Util/_strxor.cpython-36m-darwin.so" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Crypto/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/INSTALLER" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/LICENSE.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/METADATA" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/RECORD" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/WHEEL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/entry_points.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/metadata.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Django-2.0.6.dist-info/top_level.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/certifi-2018.4.16.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/certifi-2018.4.16.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/chardet-3.0.4.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/chardet-3.0.4.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/coinbase-2.1.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/coinbase-2.1.0.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/admin/checks.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/admin/checks.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/admin/options.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/admin/options.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/admin/static/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/admin/static/admin/fonts/LICENSE.txt" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/admin/views/main.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/admin/views/main.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/gis/geos/geometry.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/gis/geos/geometry.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/backends/mysql/base.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/backends/mysql/base.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/backends/mysql/operations.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/backends/mysql/operations.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/migrations/loader.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/migrations/loader.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/migrations/questioner.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/migrations/questioner.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/idna-2.7.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/idna-2.7.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip-10.0.1.dist-info/INSTALLER" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip-10.0.1.dist-info/LICENSE.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip-10.0.1.dist-info/METADATA" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip-10.0.1.dist-info/RECORD" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip-10.0.1.dist-info/WHEEL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip-10.0.1.dist-info/entry_points.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip-10.0.1.dist-info/top_level.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/__main__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/__main__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/basecommand.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/basecommand.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/build_env.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/build_env.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/cmdoptions.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/cmdoptions.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/check.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/check.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/download.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/download.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/install.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/install.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/list.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/list.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/search.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/search.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/show.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/show.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/uninstall.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/uninstall.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/wheel.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/commands/wheel.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/compat.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/compat.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/configuration.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/configuration.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/download.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/download.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/index.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/index.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/locations.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/locations.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/models/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/models/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/operations/check.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/operations/check.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/operations/freeze.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/operations/freeze.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/operations/prepare.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/operations/prepare.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/req_install.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/req_install.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/req_set.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/req_set.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/req_uninstall.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/req_uninstall.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/resolve.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/resolve.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/deprecation.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/deprecation.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/logging.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/logging.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/misc.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/misc.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/outdated.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/outdated.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/typing.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/typing.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/ui.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/utils/ui.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/bazaar.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/bazaar.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/git.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/git.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/mercurial.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/mercurial.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/subversion.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/vcs/subversion.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/wheel.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/wheel.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/_cmd.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/_cmd.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/adapter.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/adapter.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/cache.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/cache.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/controller.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/controller.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/filewrapper.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/filewrapper.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/heuristics.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/heuristics.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/serialize.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/serialize.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/wrapper.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/wrapper.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/certifi/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/certifi/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/certifi/cacert.pem" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/certifi/cacert.pem" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distlib/t32.exe" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distlib/t32.exe" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distlib/t64.exe" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distlib/t64.exe" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distlib/w32.exe" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distlib/w32.exe" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distlib/w64.exe" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distlib/w64.exe" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distro.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/distro.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/idna/core.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/idna/core.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/idna/idnadata.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/idna/idnadata.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/idna/package_data.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/idna/package_data.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/idna/uts46data.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/idna/uts46data.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/ipaddress.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/ipaddress.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/progress/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/progress/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/progress/bar.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/progress/bar.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/progress/helpers.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/progress/helpers.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/pytoml/parser.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/pytoml/parser.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/__version__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/__version__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/adapters.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/adapters.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/api.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/api.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/auth.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/auth.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/compat.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/compat.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/cookies.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/cookies.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/exceptions.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/exceptions.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/help.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/help.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/models.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/models.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/sessions.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/sessions.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/status_codes.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/status_codes.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/structures.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/structures.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/utils.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/requests/utils.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/_collections.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/_collections.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/connection.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/connection.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/appengine.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/appengine.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/securetransport.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/securetransport.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/socks.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/contrib/socks.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/exceptions.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/exceptions.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/fields.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/fields.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/filepost.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/filepost.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/poolmanager.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/poolmanager.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/request.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/request.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/response.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/response.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/connection.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/connection.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/retry.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/retry.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/selectors.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/ssl_.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/ssl_.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/wait.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_vendor/urllib3/util/wait.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/extern/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/extern/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/py31compat.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pkg_resources/py31compat.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pycryptodome-3.6.3.dist-info/INSTALLER" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pycryptodome-3.6.3.dist-info/METADATA" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pycryptodome-3.6.3.dist-info/RECORD" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pycryptodome-3.6.3.dist-info/WHEEL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pycryptodome-3.6.3.dist-info/top_level.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pytz-2018.5.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pytz-2018.5.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/requests-2.19.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/requests-2.19.1.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/INSTALLER" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/LICENSE.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/METADATA" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/RECORD" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/WHEEL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/dependency_links.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/entry_points.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/top_level.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools-39.2.0.dist-info/zip-safe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/_vendor/pyparsing.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/_vendor/pyparsing.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/bdist_egg.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/bdist_egg.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/build_ext.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/build_ext.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/develop.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/develop.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/easy_install.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/easy_install.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/test.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/command/test.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/config.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/config.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/extern/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/extern/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/monkey.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/monkey.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/package_index.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/package_index.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/pep425tags.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/pep425tags.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/py31compat.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/py31compat.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/py33compat.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/py33compat.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/script (dev).tmpl" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/script (dev).tmpl" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/site-patch.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/site-patch.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/wheel.py" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/setuptools/wheel.py" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/six-1.11.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/six-1.11.0.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/urllib3-1.23.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/urllib3-1.23.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/wheel-0.31.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/wheel-0.31.1.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,26 +402,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="auth_user: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [3]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="new_file" type="feb32156:DbDataSourceImpl" />
-      </path>
     </expand>
     <select />
   </component>
@@ -66,18 +410,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coinqual/settings.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+            <state relative-caret-position="85">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cquser/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cquser/tests.py">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -86,11 +452,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/importlib/__init__.py">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -106,11 +472,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="celery.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/planner/celery.py">
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/planner/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="290">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -118,41 +484,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/planner/forms.py">
+      <file leaf-file-name="req_install.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/req_install.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-1657">
+              <caret line="874" column="6" lean-forward="false" selection-start-line="874" selection-start-column="6" selection-end-line="874" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/planner/admin.py">
+      <file leaf-file-name="results.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/results.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/planner/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/planner/apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -161,8 +507,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/planner/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -193,6 +539,7 @@
       <find>url</find>
       <find>signupfrom</find>
       <find>form</find>
+      <find>404</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,7 +577,6 @@
         <option value="$PROJECT_DIR$/polls/templates/polls/lgin.html" />
         <option value="$PROJECT_DIR$/polls/urls.py" />
         <option value="$PROJECT_DIR$/polls/forms.py" />
-        <option value="$PROJECT_DIR$/polls/views.py" />
         <option value="$PROJECT_DIR$/coinqual/urls.py" />
         <option value="$PROJECT_DIR$/cquser/templates/cquser/base.html" />
         <option value="$PROJECT_DIR$/cquser/templates/cquser/signup.html" />
@@ -242,10 +588,15 @@
         <option value="$PROJECT_DIR$/cquser/templates/cquser/try.html" />
         <option value="$PROJECT_DIR$/cquser/views.py" />
         <option value="$PROJECT_DIR$/polls/templates/polls/main.html" />
-        <option value="$PROJECT_DIR$/coinqual/views.py" />
-        <option value="$PROJECT_DIR$/coinqual/settings.py" />
         <option value="$PROJECT_DIR$/planner/task.py" />
         <option value="$PROJECT_DIR$/planner/celery.py" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/detail.html" />
+        <option value="$PROJECT_DIR$/coinqual/settings.py" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/results.html" />
+        <option value="$PROJECT_DIR$/coinqual/views.py" />
+        <option value="$PROJECT_DIR$/polls/views.py" />
+        <option value="$PROJECT_DIR$/planner/models.py" />
+        <option value="$PROJECT_DIR$/planner/tasks.py" />
       </list>
     </option>
   </component>
@@ -258,9 +609,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="2" />
     <option name="y" value="23" />
-    <option name="width" value="802" />
+    <option name="width" value="725" />
     <option name="height" value="825" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -276,7 +628,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>PyCompatibilityInspection</id>
+            <id>PyPackageRequirementsInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -323,6 +675,24 @@
               <item name="sqdt" type="462c0819:PsiDirectoryNode" />
               <item name="planner" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sqdt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt" type="462c0819:PsiDirectoryNode" />
+              <item name="polls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqdt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt" type="462c0819:PsiDirectoryNode" />
+              <item name="polls" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqdt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt" type="462c0819:PsiDirectoryNode" />
+              <item name="polls" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="polls" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -358,14 +728,14 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server">
+    <configuration name="celery" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="DJANGO_SETTINGS_MODULE" value="coinqual.settings" />
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python3" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -459,24 +829,46 @@
       <option name="project" value="LOCAL" />
       <updated>1532820362289</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="New User signup app">
+      <created>1532820376899</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1532820376899</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Coinbase Spot price update to the database&#10;&#10;Merge branch 'master' of https://github.com/gchun88/Squaredistrict&#10;&#10;# Conflicts:&#10;#&#9;coinqual/settings.py&#10;#&#9;db.sqlite3">
+      <created>1532858016525</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1532858016525</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="802" height="825" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890411" sideWeight="0.28954422" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36849314" sideWeight="0.6769437" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890411" sideWeight="0.49961567" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25513905" sideWeight="0.7104558" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4520548" sideWeight="0.6595174" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4219178" sideWeight="0.49463806" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28157896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32406288" sideWeight="0.6769437" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28899637" sideWeight="0.49961567" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32406288" sideWeight="0.7104558" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37726724" sideWeight="0.6595174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15307583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29020557" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23247497" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.83547926" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -487,6 +879,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4219178" sideWeight="0.49463806" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -524,7 +917,8 @@
     <MESSAGE value="fghfhfhgfh" />
     <MESSAGE value="trying commit for new ubuntu install" />
     <MESSAGE value="New User signup app" />
-    <option name="LAST_COMMIT_MESSAGE" value="New User signup app" />
+    <MESSAGE value="Coinbase Spot price update to the database&#10;&#10;Merge branch 'master' of https://github.com/gchun88/Squaredistrict&#10;&#10;# Conflicts:&#10;#&#9;coinqual/settings.py&#10;#&#9;db.sqlite3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coinbase Spot price update to the database&#10;&#10;Merge branch 'master' of https://github.com/gchun88/Squaredistrict&#10;&#10;# Conflicts:&#10;#&#9;coinqual/settings.py&#10;#&#9;db.sqlite3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -533,228 +927,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="74" lean-forward="false" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/lgin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a364c7e0-5ace-40f6-bde1-48a8fe02d3d6/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1b164465-53cb-49e1-a93d-46f18bdc26b6/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/9af5cd10/0fe2d681-8915-43a8-95ce-e19c965207c0/main.auth_user">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/9af5cd10/0fe2d681-8915-43a8-95ce-e19c965207c0/main.auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/loggedin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cquser/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0fe2d681-8915-43a8-95ce-e19c965207c0/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coinqual/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cquser/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cquser/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cquser/templates/cquser/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#small#0;n#p#0;n#form#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cquser/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cquser/templates/cquser/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -787,24 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cquser/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#54#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coinqual/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -833,24 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coinqual/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="96" column="1" lean-forward="false" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planner/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -903,26 +1043,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planner/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/importlib/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coinqual/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -935,6 +1059,262 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/planner/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cquser/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0fe2d681-8915-43a8-95ce-e19c965207c0/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/9af5cd10/0fe2d681-8915-43a8-95ce-e19c965207c0/main.polls_choice">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9af5cd10/0fe2d681-8915-43a8-95ce-e19c965207c0/main.polls_choice">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b8be8c01-c0c9-43d9-94eb-d97aaedaf39a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7da6b4ea-fbbc-41a3-9a5a-1b26621ee3b1/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9af5cd10/7da6b4ea-fbbc-41a3-9a5a-1b26621ee3b1/main.planner_cbtoken">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="110" column="18" lean-forward="false" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9af5cd10/3289d6e1-5320-4497-8547-6c5f7714f558/main.memos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3289d6e1-5320-4497-8547-6c5f7714f558/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9af5cd10/3289d6e1-5320-4497-8547-6c5f7714f558/main.planner_cbtoken">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planner/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="88" column="23" lean-forward="false" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cquser/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/planner/task.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -943,10 +1323,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planner/celery.py">
+    <entry file="file://$PROJECT_DIR$/planner/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/pip/_internal/req/req_install.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1657">
+          <caret line="874" column="6" lean-forward="false" selection-start-line="874" selection-start-column="6" selection-end-line="874" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planner/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>

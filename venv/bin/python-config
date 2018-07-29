@@ -1,4 +1,4 @@
-#!/Users/tylerchun/Documents/GitHub/square/venv/bin/python
+#!/Users/tylerchun/Documents/GitHub/sqdt/venv/bin/python
 
 import sys
 import getopt

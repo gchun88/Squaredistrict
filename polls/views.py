@@ -27,9 +27,10 @@ def detail(request, question_id):
     return render(request, 'polls/detail.html', {'question': question})
 
 
-
+from planner.models import CBtoken
 
 def vote(request, question_id):
+
     question = get_object_or_404(Question, pk=question_id)
     try:
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
@@ -50,8 +51,10 @@ from django.shortcuts import get_object_or_404, render
 
 
 def results(request, question_id):
+    CBtoken.objects.all()
     question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'polls/results.html', {'question': question})
+    cbtoken = get_object_or_404(CBtoken, pk=5)
+    return render(request, 'polls/results.html', {'question': question, 'cbtoken':cbtoken})
 
 
 def home(request):
@@ -131,3 +134,4 @@ r2=requests.post("https://api.coinbase.com/oauth/token",data ={"grant_type":"aut
 r=requests.get("https://www.coinbase.com/oauth/authorize?response_type=code&client_id="+ClientId+"&redirect_uri=http://www.coinqual.com/buy&state=SECURE_RANDOM&scope=wallet:accounts:read")
 '''
 
+code='e5917f149e391f974480ad3cdcf166636fab9870789171786b1ca7d2392573e3'

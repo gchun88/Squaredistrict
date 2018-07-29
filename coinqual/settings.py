@@ -111,9 +111,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 INSTALLED_APPS = [
     'django_celery_beat',
     'django_celery_results',
-    'django_extensions',
-    'sslserver',
-    'djangosecure',
+#    'django_extensions',
+#    'sslserver',
+#    'djangosecure',
     'cquser.apps.CquserConfig',
     'planner.apps.PlannerConfig',
 #    'bootstrap3.bootstrap',
