@@ -12,6 +12,39 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+
+# Other Django configurations...
+# Celery application definition
+# http://docs.celeryproject.org/en/v4.0.2/userguide/configuration.html
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'Asia/Makassar'
+# Celery Codes
+# The following lines may contains pseudo-code
+from celery.schedules import crontab
+# Other Celery settings
+#CELERYBEAT_SCHEDULE = {
+#    'task-number-one': {
+#        'task': 'run_scheduled_jobs',
+#        'schedule': crontab(),
+##        'args': (*args)
+#    },}
+#,
+#    'task-number-two': {
+#        'task': 'app2.tasks.task_number_two',
+#        'schedule': crontab(minute=0, hour='*/3,10-19'),
+#        'args': (*args)
+#    }
+#}
+
+
+
+
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -76,10 +109,13 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 INSTALLED_APPS = [
-#    'django_extensions',
-#    'sslserver',
-#    'djangosecure',
+    'django_celery_beat',
+    'django_celery_results',
+    'django_extensions',
+    'sslserver',
+    'djangosecure',
     'cquser.apps.CquserConfig',
+    'planner.apps.PlannerConfig',
 #    'bootstrap3.bootstrap',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
