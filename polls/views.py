@@ -27,7 +27,6 @@ def detail(request, question_id):
     return render(request, 'polls/detail.html', {'question': question})
 
 
-from planner.models import CBtoken
 
 def vote(request, question_id):
 
@@ -51,10 +50,10 @@ from django.shortcuts import get_object_or_404, render
 
 
 def results(request, question_id):
-    CBtoken.objects.all()
+#    CBtoken.objects.all()
     question = get_object_or_404(Question, pk=question_id)
-    cbtoken = get_object_or_404(CBtoken, pk=5)
-    return render(request, 'polls/results.html', {'question': question, 'cbtoken':cbtoken})
+#    cbtoken = get_object_or_404(CBtoken, pk=5)
+    return render(request, 'polls/results.html', {'question': question})
 
 
 def home(request):

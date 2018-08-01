@@ -24,3 +24,12 @@ app.autodiscover_tasks()
 @app.task(bind=True)
 def debug_task(self):
     print('Request: {0!r}'.format(self.request))
+
+
+from celery.schedules import crontab
+app.conf.beat_schedule = {
+    'add-every-30-seconds': {
+        'task': 'priceupdate',
+        'schedule': 300.0
+    },
+}

@@ -72,7 +72,6 @@ def coinbase(request):
 
 from django.template import Context, RequestContext
 from django.shortcuts import render_to_response, get_object_or_404
-from planner.models import CBtoken
 
 def cb_usr_code(request):
     ClientId = settings.SOCIAL_AUTH_COINBASE_KEY

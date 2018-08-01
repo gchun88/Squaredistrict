@@ -25,33 +25,44 @@ def signup(request):
 
 def logout_view(request):
     logout(request)
-    return render(request, 'polls/main.html', {})
+    return redirect('main')
 
 def try1(request):
-    form = LoginForm()
     if request.method == 'POST':
+        form=LoginForm()
         form = LoginForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-#        username = request.POST['username']
-#        password = request.POST['password']
+#            username = request.POST['username']
+#            password = request.POST['password']
 
-            user = authenticate(username=username,
+            user = authenticate(request,username=username,
                                 password=password)
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return render(request,'cquser/try.html', {'form': form})
+                    return render(request,'polls/main.html', {'form': form})
                 else:
                     return HttpResponse('Disabled account')
-
-        else:
-            form = LoginForm(request.POST)
-            return render(request, 'cquser/try.html',{'form':form})
+            else:
+                return HttpResponse('sorry user has no value')
     else:
-        form = LoginForm()
-        return render(request, 'cquser/try.html',{'form':form})
+        return HttpsResponse('sorry No Post')
+
+
+
+     #   else:
+    #        try:
+   #             form = LoginForm(request.POST)
+  #          except:
+ #               return render(request, 'polls/main.html',{})
+#    else:
+#        try:
+#
+#            form = LoginForm()
+#        except:
+#            return render(request, 'polls/main.html',{})
 
 
 

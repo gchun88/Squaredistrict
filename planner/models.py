@@ -1,14 +1,14 @@
 from django.db import models
-
+from django.utils import timezone
 # Create your models here.
 
 class spot_price(models.Model):
-    
-    bch=models.FloatField()
-    bth=models.FloatField()
-    eth=models.FloatField()
-    ltc=models.FloatField()
-    dt=models.DateTimeField(primary_key=True)
+    id=models.AutoField(primary_key=True)
+    bch=models.FloatField(default=None)
+    bth=models.FloatField(default=None)
+    eth=models.FloatField(default=None)
+    ltc=models.FloatField(default=None)
+    dt=models.DateTimeField(default=timezone.now)
     def __float__(self):
         return self.bch
     def __float__(self):

@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
-
+TIME_ZONE='UTC'
+USE_TZ=True
 # Other Django configurations...
 # Celery application definition
 # http://docs.celeryproject.org/en/v4.0.2/userguide/configuration.html
@@ -21,7 +22,7 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
-CELERY_TIMEZONE = 'Asia/Makassar'
+CELERY_TIMEZONE = TIME_ZONE
 # Celery Codes
 # The following lines may contains pseudo-code
 from celery.schedules import crontab
@@ -128,6 +129,10 @@ INSTALLED_APPS = [
 
 ]
 
+AUTHENTICATION_BACKENDS=(
+    'django.contrib.auth.backends.ModelBackend',
+)
+
 
 MIDDLEWARE = [
     
@@ -155,25 +160,25 @@ WSGI_APPLICATION = 'coinqual.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-
-
 #DATABASES = {
 #    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'coinqualDB',
-#        'USER':'coinqual',
-#        'PASSWORD': 'ChipFanBus',
-#        'HOST': 'coinqual.cznmstr6rc4g.us-west-1.rds.amazonaws.com',
-#        'PORT': '3306'
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #    }
 #}
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'coinqualDB',
+        'USER':'coinqual',
+        'PASSWORD': 'ChipFanBus0',
+        'HOST': 'coinqualdb.cysmygzyhtfg.us-west-1.rds.amazonaws.com',
+        'PORT': '3306'
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -203,13 +208,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+
 
 
 # Static files (CSS, JavaScript, Images)
