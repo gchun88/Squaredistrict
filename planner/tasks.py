@@ -21,9 +21,9 @@ def xsum(numbers):
 @task(name="priceupdate")
 def priceupdate():
     a=OAuthClient("7676d0b819a701688eef2f52652e8cbcf2107e440c9c11113ae811f38dfac1ed","5d2eec22fd3bc63edd19758a448b14975c0832ab8ca0ac6a1be2c6676c28ec3e")
-    spot_price(bth=(float(a.get_buy_price(currency_pair="BCH-USD").amount)),
+    spot_price(b=(float(a.get_buy_price(currency_pair="BCH-USD").amount)),
            eth=(float(a.get_buy_price(currency_pair="ETH-USD").amount)),
-           bch=(float(a.get_buy_price(currency_pair="BTC-USD").amount)),
+           btc=(float(a.get_buy_price(currency_pair="BTC-USD").amount)),
            ltc=(float(a.get_buy_price(currency_pair="LTC-USD").amount))
            ).save()
 
