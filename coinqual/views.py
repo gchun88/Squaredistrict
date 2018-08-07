@@ -12,11 +12,12 @@ import json
 import coinbase
 from cquser.forms import LoginForm
 from django.contrib.auth import login, authenticate
-
+from planner.models import spot_price
 
 
 def main(request):
-    return render(request, 'polls/main.html',{})
+    Cprice=spot_price.objects.order_by('-id').values_list('btc',flat=True)[0]
+    return render(request, 'polls/main.html',{'Cprice':round(Cprice/1.0100253114906812,2)})
 
 
 

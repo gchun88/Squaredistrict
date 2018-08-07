@@ -4,8 +4,8 @@ from django.utils import timezone
 
 class spot_price(models.Model):
     id=models.AutoField(primary_key=True)
+    btc=models.FloatField(default=None)
     bch=models.FloatField(default=None)
-    bth=models.FloatField(default=None)
     eth=models.FloatField(default=None)
     ltc=models.FloatField(default=None)
     dt=models.DateTimeField(default=timezone.now)
