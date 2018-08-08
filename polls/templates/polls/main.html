@@ -56,7 +56,7 @@
 </header>
 
 <body>
-<h2>${{Cprice}} </h>
+<h2>${{Cprice}} </h2>
 <table>
     <table width="100%"border="1">
         <TR>
@@ -82,7 +82,19 @@
 </div>
 <a href="https://www.coinbase.com/oauth/authorize?response_type=code&client_id=77d5af4941ffd6d5f0c9149e2e303a1c28d9f44c09b63694d6f2f608c60947c0&redirect_uri=http://www.coinqual.com/&state=SECURE_RANDOM&scope=wallet:accounts:read">Buy</a>
 <a href="http://www.google.com/">Sell</a>
+<form method="post">{% csrf_token %}
 
+    {% for field in form2 %}
+      <p>
+        {{ field.label_tag }}<br>
+        {{ field }}
+        {% if field.help_text %}
+          <small style="color: #358035">{{ field.help_text }}</small>
+        {% endif %}
+    {% endfor %}
+      </p>
+<button type="submit">summit</button>
+</form>
 </body>
 
 <footer>
