@@ -14,7 +14,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="47">
+          <list size="50">
             <item index="0" class="java.lang.String" itemvalue="python-systemd" />
             <item index="1" class="java.lang.String" itemvalue="PyJWT" />
             <item index="2" class="java.lang.String" itemvalue="pycurl" />
@@ -62,6 +62,9 @@
             <item index="44" class="java.lang.String" itemvalue="pycryptodome" />
             <item index="45" class="java.lang.String" itemvalue="pygobject" />
             <item index="46" class="java.lang.String" itemvalue="jsonpatch" />
+            <item index="47" class="java.lang.String" itemvalue="coinbase" />
+            <item index="48" class="java.lang.String" itemvalue="pytz" />
+            <item index="49" class="java.lang.String" itemvalue="idna" />
           </list>
         </value>
       </option>
