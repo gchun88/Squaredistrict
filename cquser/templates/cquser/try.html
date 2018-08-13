@@ -8,7 +8,7 @@
 {% extends 'polls/main.html' %}
 
 
-{% block content %}
+{% block content1 %}
     {% if user.is_authenticated %}
         {{ form.user.bound_data }}
         <p>it worked finally {{ user.username }}</p>
@@ -25,7 +25,7 @@
              <a class="lead" href="{% url 'cquser:login' %}">Log in</a>
     {% endif %}
         <p>{{ request.build_absolute_uri }} <a href = "{% url 'coinbase' %}"> {ip} IP page </a></p>
-{% endblock content %}
+{% endblock %}
 
 
 </body>

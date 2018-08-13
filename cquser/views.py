@@ -29,7 +29,7 @@ def logout_view(request):
 
 def try1(request):
     if request.method == 'POST':
-        form=LoginForm()
+#        form=LoginForm()
         form = LoginForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data.get('username')
@@ -74,9 +74,8 @@ from cquser.forms import LoginForm
 def user_login(request):
     return render(request, 'cquser/login.html')
 
+from cquser.forms import transaction
 
-
-
-
-#def chain(request):
-   
+def chain(request):
+    form = transaction()
+    return render(request,'cquser/chain.html',{'form2':form})

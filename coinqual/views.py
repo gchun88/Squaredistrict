@@ -16,10 +16,43 @@ from planner.models import spot_price
 
 from cquser.forms import transaction
 
+
+
+cities = [1,2,3,4,5,6,7,'wef']
+tsdata=['b_s','price','coin','coinamt']
+
+from cquser.models import transactionM
+import re
+
 def main(request):
-    form = transaction()
+
+
+    if request.method == "POST" :
+        form=transaction(request.POST)
+        if form.is_valid():
+            b_s1 = form.cleaned_data.get(tsdata[0])
+            price1 = form.cleaned_data.get(tsdata[1])
+            coin1 = form.cleaned_data.get(tsdata[2])
+            coinamt1 = form.cleaned_data.get(tsdata[3])
+
+            try:
+                string=transactionM.objects.order_by('-chainid').values()[0]+1
+            except:
+                string = 1
+
+            user1=request.user
+            if len([price1])>1:
+                for i in range(0,len([price1])):
+                    transactionM(chainid=string[0], coin=coin1[i], price=float(price1[i]), coinamt=float(coinamt1[i]), b_s=b_s1[i],
+                                 user=user1[0]).save()
+            else:
+                transactionM(chainid=string,coin=coin1,price=float(price1),coinamt=float(coinamt1),b_s=b_s1,user=user1).save()
+            return HttpResponseRedirect(reverse('main'))
+
+
+
     Cprice=spot_price.objects.order_by('-id').values_list('btc',flat=True)[0]
-    return render(request, 'polls/main.html',{'form2':form,'Cprice':round(Cprice/1.0100253114906812,2)})
+    return render(request, 'polls/main.html',{'Cprice':round(Cprice/1.0100253114906812,2),'cities':cities})
 
 
 
@@ -106,6 +139,11 @@ def cb_usr_code(request):
     }
         ,
         RequestContext(request))
+
+
+
+
+
 
 
 

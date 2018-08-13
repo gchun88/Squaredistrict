@@ -25,7 +25,7 @@
 
 <header style="text-align:center">
     <p>
-    {% block content %}
+    {% block content1 %}
     {% if user.is_authenticated %}
         {{ request.build_absolute_uri }}
              <p class="display-4">Hello, {{ user.username }}</p>
@@ -36,7 +36,7 @@
             <p><a class="lead" href="{% url 'cquser:login' %}">Log in</a></p>
         {% endif %}
         <p>{{ request.build_absolute_uri }} <a href = "{% url 'coinbase' %}"> {ip} IP page </a></p>
-{% endblock content %}
+
 
 {% if request.build_absolute_uri == "/auth/complete/coinbase/?code=*" %}
 {{ request.build_absolute_uri }}
@@ -57,6 +57,11 @@
 
 <body>
 <h2>${{Cprice}} </h2>
+    {% endblock %}
+
+
+
+
 <table>
     <table width="100%"border="1">
         <TR>
@@ -82,20 +87,32 @@
 </div>
 <a href="https://www.coinbase.com/oauth/authorize?response_type=code&client_id=77d5af4941ffd6d5f0c9149e2e303a1c28d9f44c09b63694d6f2f608c60947c0&redirect_uri=http://www.coinqual.com/&state=SECURE_RANDOM&scope=wallet:accounts:read">Buy</a>
 <a href="http://www.google.com/">Sell</a>
-<form method="post">{% csrf_token %}
 
-    {% for field in form2 %}
-      <p>
-        {{ field.label_tag }}<br>
-        {{ field }}
-        {% if field.help_text %}
-          <small style="color: #358035">{{ field.help_text }}</small>
-        {% endif %}
-    {% endfor %}
-      </p>
-<button type="submit">summit</button>
-</form>
+
+
 </body>
+
+
+
+<table width="100%"border="1">
+<tr>
+    {% for i in cities %}
+<p><TH ALIGN="CENTER">
+
+    {{ i }}
+</TH>
+
+    {# do your stuff #}
+{% endfor %}
+
+</tr>
+
+</table>
+
+
+
+
+
 
 <footer>
     <p>© 2018 CoinQual</p>
@@ -107,3 +124,12 @@
 </footer>
 
 </html>
+
+
+
+
+
+
+
+
+
