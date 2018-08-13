@@ -9,12 +9,4 @@ class spot_price(models.Model):
     eth=models.FloatField(default=None)
     ltc=models.FloatField(default=None)
     dt=models.DateTimeField(default=timezone.now)
-    def __float__(self):
-        return self.bch
-    def __float__(self):
-        return self.bth
-    def __float__(self):
-        return self.eth
-    def __float__(self):
-        return self.ltc
 

@@ -38,11 +38,15 @@ b_ss=(
 from cquser.models import transactionM
 class transaction(forms.Form):
     b_s=forms.CharField(label='Buy/Sell',widget=forms.Select(choices=b_ss))
+    coinamt = forms.FloatField(label='Set your coin amount ')
     price=forms.FloatField(label='Set your price ')
     coin=forms.CharField(label='Choose your coin ',widget=forms.Select(choices=coins))
+
+
+
     class Meta:
         model=transactionM
-        fields=['b_s','price','coin']
+        fields=['b_s','price','coin','coinamt']
 
 
 
