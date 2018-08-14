@@ -110,6 +110,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 INSTALLED_APPS = [
+    'debug_toolbar',
+
+
     'django_celery_beat',
     'django_celery_results',
 #    'django_extensions',
@@ -135,7 +138,7 @@ AUTHENTICATION_BACKENDS=(
 
 
 MIDDLEWARE = [
-    
+    'debug_toolbar.middleware.DebugToolbarMiddleware',    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

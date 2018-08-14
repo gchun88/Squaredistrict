@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8"/>
     <title>CoinQual</title>
@@ -13,6 +12,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <!-- Draft icon for Web -->
     <link rel="icon" type="image/png" href="{% static 'Icon.png' %}" sizes="16x16"/>
+    <style>
+    table,th,td{
+          border:1px solid black;
+          border-collapse:collapse;
+}
+th,td{
+     padding: 5px;
+     text-align: left;
+}
+</style>
 </head>
 
 <header style="text-align:left">
@@ -30,6 +39,7 @@
         {{ request.build_absolute_uri }}
              <p class="display-4">Hello, {{ user.username }}</p>
              <p> <a href="{% url 'cquser:logout' %}"> Logout </a></p>
+             <p> <a href="{% url 'cquser:chain' %}"> Transaction Chain Link </a></p>
         {% else %}
         {{ request.build_absolute_uri }}
         <p><a class="lead" href="{% url 'cquser:signup' %}">SignUp</a></p>
@@ -57,9 +67,32 @@
 
 <body>
 <h2>${{Cprice}} </h2>
-    {% endblock %}
+{% if user.is_authenticated %}
+<table style="width:100%">
+<tr>
+<th>Targeting Price</th>
+<th>Coin Type</th>
+<th>Coin Amount</th>
+<th>Time Requested</th>
+<th>Transaction_id</th>
+<th>Cancel</th>
+</tr>
 
+{% for j in records %}
+<tr>
+<td>${{j.price}}  </td> <td>{{j.coin}}  </td> <td>{{j.coinamt}}  </td> <td>{{j.time}}  </td>
+<td> {{j.transaction_id}}</td>
+<td><form method="post" action=".">{% csrf_token %}
+<button type="submit" name="close {{j.transaction_id}}">Cancel Reserved Transaction</button>
+</form>
+ <br>
+</tr>
 
+{% endfor %}
+
+</table>
+{%endif%}
+{%endblock%}
 
 
 <table>

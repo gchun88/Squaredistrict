@@ -8,7 +8,7 @@
 {% extends 'polls/main.html' %}
 
 {% block content1 %}
-<form action="{% url 'cquser:try' %}" method="post">{% csrf_token %}
+<form action="{% url 'main' %}" method="post">{% csrf_token %}
 
     <p>username:<input type="text" name="username" value="" /></p>
     <p>password:<input type="password" name="password" value="" /></p>

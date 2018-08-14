@@ -23,10 +23,11 @@ tsdata=['b_s','price','coin','coinamt']
 
 from cquser.models import transactionM
 import re
-
+from django.contrib.auth.models import User
+from cquser.forms import LoginForm
 def main(request):
 
-
+    
     if request.method == "POST" :
         form=transaction(request.POST)
         if form.is_valid():
@@ -45,14 +46,37 @@ def main(request):
                 for i in range(0,len([price1])):
                     transactionM(chainid=string[0], coin=coin1[i], price=float(price1[i]), coinamt=float(coinamt1[i]), b_s=b_s1[i],
                                  user=user1[0]).save()
+                return HttpResponseRedirect(revser('main'))
             else:
                 transactionM(chainid=string,coin=coin1,price=float(price1),coinamt=float(coinamt1),b_s=b_s1,user=user1).save()
-            return HttpResponseRedirect(reverse('main'))
+                return HttpResponseRedirect(reverse('main'))
 
+        loginform=LoginForm(request.POST)
+        if loginform.is_valid():
+            username=loginform.cleaned_data.get('username')
+            password=loginform.cleaned_data.get('password')
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                if user.is_active:
+                    login(request, user)
+                else:
+                    return HttpResponse('disabled account')
+    if request.user.is_authenticated:
+        records = transactionM.objects.filter(active=1,user_id=User.objects.filter(username=request.user)[0]).order_by('time')
+    else:
+        records=[]
+    try:
+        trst_id=[re.sub("[a-z]| ","",a) for a in request.POST if "close" in a]
+        transactionM.objects.filter(transaction_id=int(trst_id[0])).delete()
 
+    except:
+        print("hi")
+    Cprice = spot_price.objects.order_by('-id').values_list('btc',flat=True)[0]
+    context={'Cpirce':round(Cprice/1.0100253114906812,2),
+             'cities':cities,
+             'records':records,}
 
-    Cprice=spot_price.objects.order_by('-id').values_list('btc',flat=True)[0]
-    return render(request, 'polls/main.html',{'Cprice':round(Cprice/1.0100253114906812,2),'cities':cities})
+    return render(request, 'polls/main.html',context)
 
 
 
