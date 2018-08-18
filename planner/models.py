@@ -8,5 +8,6 @@ class spot_price(models.Model):
     bch=models.FloatField(default=None)
     eth=models.FloatField(default=None)
     ltc=models.FloatField(default=None)
+    etc=models.FloatField(default=None)
     dt=models.DateTimeField(default=timezone.now)
 

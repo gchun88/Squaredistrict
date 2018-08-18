@@ -125,44 +125,44 @@ def coinbase(request):
     clientsecret = settings.SOCIAL_AUTH_COINBASE_SECRET
     response = requests.get("https://www.coinbase.com/oauth/authorize?response_type=code&client_id="+
                             ClientId+
-                            "&redirect_uri=http://127.0.0.1:8000/auth/complete/coinbase/&account=all&state=SECURE_RANDOM&scope=wallet:accounts:update wallet:accounts:create wallet:accounts:delete wallet:accounts:read wallet:addresses:create wallet:addresses:read wallet:buys:create wallet:buys:read wallet:checkouts:create wallet:checkouts:read wallet:contacts:read wallet:deposits:create wallet:deposits:read wallet:notifications:read wallet:orders:create wallet:orders:read wallet:orders:refund wallet:payment-methods:delete wallet:payment-methods:limits wallet:payment-methods:read wallet:sells:create wallet:sells:read wallet:transactions:read wallet:transactions:request wallet:transactions:transfer wallet:user:email wallet:user:read wallet:user:update wallet:withdrawals:create wallet:withdrawals:read")
+                            "&redirect_uri=http://www.coinqual.com/auth/complete/coinbase/&account=all&state=SECURE_RANDOM&scope=wallet:accounts:update wallet:accounts:create wallet:accounts:delete wallet:accounts:read wallet:addresses:create wallet:addresses:read wallet:buys:create wallet:buys:read wallet:checkouts:create wallet:checkouts:read wallet:contacts:read wallet:deposits:create wallet:deposits:read wallet:notifications:read wallet:orders:create wallet:orders:read wallet:orders:refund wallet:payment-methods:delete wallet:payment-methods:limits wallet:payment-methods:read wallet:sells:create wallet:sells:read wallet:transactions:read wallet:transactions:request wallet:transactions:transfer wallet:user:email wallet:user:read wallet:user:update wallet:withdrawals:create wallet:withdrawals:read")
     return redirect(response.url)
 
 
 
 from django.template import Context, RequestContext
 from django.shortcuts import render_to_response, get_object_or_404
+from django.contrib.auth.models import User
+from cquser.models import user_token
 
 def cb_usr_code(request):
-    ClientId = settings.SOCIAL_AUTH_COINBASE_KEY
-    clientsecret = settings.SOCIAL_AUTH_COINBASE_SECRET
-    response = requests.get('http://freegeoip.net/json/')
-    geodata = response.json()
-    code1=request.GET.get('code')
-    context = {
-        'code1':code1
-    }
+    if request.user.is_authenticated:
+        ClientId = settings.SOCIAL_AUTH_COINBASE_KEY
+        clientsecret = settings.SOCIAL_AUTH_COINBASE_SECRET
+        code1=request.GET.get('code')
+        context = {
+            'code1':code1,
+        }
 
-    r2=requests.post("https://api.coinbase.com/oauth/token",data={"grant_type":"authorization_code","code":code1,"client_id":ClientId,"client_secret":clientsecret,"redirect_uri":"http://127.0.0.1:8000/auth/complete/coinbase/"})
-    cbAFtoken=r2.json()
-    client=OAuthClient(cbAFtoken['access_token'],cbAFtoken['refresh_token'])
+        r2=requests.post("https://api.coinbase.com/oauth/token",data={"grant_type":"authorization_code","code":code1,"client_id":ClientId,"client_secret":clientsecret,"redirect_uri":"http://www.coinqual.com/auth/complete/coinbase/"})
+        cbAFtoken=r2.json()
+        client=OAuthClient(cbAFtoken['access_token'],cbAFtoken['refresh_token'])
+#    if request.user is not 'ananymous' or request.user is not None:
+#        if client is None:
+#            user_token(access_token=abAFtoken['access_token'],refresh_token=abAFtoken['refresh_token'],user_id=request.user)
+
 #    user = client.get_current_user()
 #    user_as_json_string = json.dumps(user)
-    user=client.get_current_user().name
-    price=client.get_spot_price()
+        user=client.get_current_user().name
+        price=client.get_spot_price()
 
 #    CBtoken(access_token=cbAFtoken['access_token'],refresh_token=cbAFtoken['refresh_token']).save()
-
-
-    return render_to_response('polls/home.html', {
-#        'ip': geodata['ip'],
-#        'country': geodata['country_name'],
+        context={
         'code1':code1,
         'user':user,
-        'price':price.amount
-    }
-        ,
-        RequestContext(request))
+        'price':price.amount,}
+
+        return render(request,'polls/home.html', context)
 
 
 

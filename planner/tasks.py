@@ -24,7 +24,8 @@ def priceupdate():
     spot_price(btc=(float(a.get_buy_price(currency_pair="BTC-USD").amount)),
            eth=(float(a.get_buy_price(currency_pair="ETH-USD").amount)),
            bch=(float(a.get_buy_price(currency_pair="BCH-USD").amount)),
-           ltc=(float(a.get_buy_price(currency_pair="LTC-USD").amount))
+           ltc=(float(a.get_buy_price(currency_pair="LTC-USD").amount)),
+           etc=(float(a.get_buy_price(currency_pair="ETC-USD").amount)),
            ).save()
 
 # buy = spot * 1.0100253114906812

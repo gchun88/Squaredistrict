@@ -30,6 +30,6 @@ from celery.schedules import crontab
 app.conf.beat_schedule = {
     'add-every-30-seconds': {
         'task': 'priceupdate',
-        'schedule': 300.0
+        'schedule': 30.0
     },
 }
