@@ -125,7 +125,7 @@ def coinbase(request):
     clientsecret = settings.SOCIAL_AUTH_COINBASE_SECRET
     response = requests.get("https://www.coinbase.com/oauth/authorize?response_type=code&client_id="+
                             ClientId+
-                            "&redirect_uri=http://www.coinqual.com/auth/complete/coinbase/&account=all&state=SECURE_RANDOM&scope=wallet:accounts:update wallet:accounts:create wallet:accounts:delete wallet:accounts:read wallet:addresses:create wallet:addresses:read wallet:buys:create wallet:buys:read wallet:checkouts:create wallet:checkouts:read wallet:contacts:read wallet:deposits:create wallet:deposits:read wallet:notifications:read wallet:orders:create wallet:orders:read wallet:orders:refund wallet:payment-methods:delete wallet:payment-methods:limits wallet:payment-methods:read wallet:sells:create wallet:sells:read wallet:transactions:read wallet:transactions:request wallet:transactions:transfer wallet:user:email wallet:user:read wallet:user:update wallet:withdrawals:create wallet:withdrawals:read")
+                            "&redirect_uri=http://www.coinqual.com/coinbase/&account=all&state=SECURE_RANDOM&scope=wallet:accounts:update wallet:accounts:create wallet:accounts:delete wallet:accounts:read wallet:addresses:create wallet:addresses:read wallet:buys:create wallet:buys:read wallet:checkouts:create wallet:checkouts:read wallet:contacts:read wallet:deposits:create wallet:deposits:read wallet:notifications:read wallet:orders:create wallet:orders:read wallet:orders:refund wallet:payment-methods:delete wallet:payment-methods:limits wallet:payment-methods:read wallet:sells:create wallet:sells:read wallet:transactions:read wallet:transactions:request wallet:transactions:transfer wallet:user:email wallet:user:read wallet:user:update wallet:withdrawals:create wallet:withdrawals:read")
     return redirect(response.url)
 
 
@@ -136,39 +136,41 @@ from django.contrib.auth.models import User
 from cquser.models import user_token
 
 def cb_usr_code(request):
-    if request.user.is_authenticated:
-        ClientId = settings.SOCIAL_AUTH_COINBASE_KEY
-        clientsecret = settings.SOCIAL_AUTH_COINBASE_SECRET
-        code1=request.GET.get('code')
-        context = {
-            'code1':code1,
-        }
+    ClientId = settings.SOCIAL_AUTH_COINBASE_KEY
+    clientsecret = settings.SOCIAL_AUTH_COINBASE_SECRET
+    code1=request.GET.get('code')
+    r2=requests.post("https://api.coinbase.com/oauth/token",data={"grant_type":"authorization_code","code":code1,"client_id":ClientId,"client_secret":clientsecret,"redirect_uri":"http://www.coinqual.com/coinbase/"})
+    cbAFtoken=r2.json()
+#        client=OAuthClient(cbAFtoken['access_token'],cbAFtoken['refresh_token'])
+    try:
+        if len(user_token.objects.filter(user=request.user).values()[0]['access_token'])>1:
+            user_token.objects.filter(user=request.user).update(access_token=cbAFtoken['access_token'],refresh_token=cbAFtoken['refresh_token'])
+            clito=user_token.objects.filter(user=request.user).values()[0]
+            client=OAuthClient(clito['access_token'],clito['refresh_token'])
+        else:
+            user_token(user=request.user,access_token=cbAFtoken['access_token'],refresh_token=cbAFtoken['refresh_token'])
+            clito=user_token.objects.filter(user=request.user).values()[0]
+            client=OAuthClient(clito['access_token'],clito['refresh_token'])
+        user=client.get_current_user().name
+        price=client.get_spot_price().amount
+    except:
+        client=[]
+        user=[]
+        price=[]
 
-        r2=requests.post("https://api.coinbase.com/oauth/token",data={"grant_type":"authorization_code","code":code1,"client_id":ClientId,"client_secret":clientsecret,"redirect_uri":"http://www.coinqual.com/auth/complete/coinbase/"})
-        cbAFtoken=r2.json()
-        client=OAuthClient(cbAFtoken['access_token'],cbAFtoken['refresh_token'])
 #    if request.user is not 'ananymous' or request.user is not None:
 #        if client is None:
 #            user_token(access_token=abAFtoken['access_token'],refresh_token=abAFtoken['refresh_token'],user_id=request.user)
 
 #    user = client.get_current_user()
 #    user_as_json_string = json.dumps(user)
-        user=client.get_current_user().name
-        price=client.get_spot_price()
 
 #    CBtoken(access_token=cbAFtoken['access_token'],refresh_token=cbAFtoken['refresh_token']).save()
-        context={
-        'code1':code1,
-        'user':user,
-        'price':price.amount,}
-
-        return render(request,'polls/home.html', context)
-
-
-
-
-
-
-
+    context={
+    'code1':code1,
+    'user':user,
+    'price':price,}
+#    return redirect('main')
+    return render(request,'polls/home.html',context)
 
 
