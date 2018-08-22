@@ -28,5 +28,21 @@ def priceupdate():
            etc=(float(a.get_buy_price(currency_pair="ETC-USD").amount)),
            ).save()
 
+
+from cquser.models import user_token
+
+@task(name="token_refresh")
+def get_new_token():
+    for i in range(0,len(user_token.objects.all())):
+        a=OAuthClient(user_token.objects.values()[i]['access_token'],user_token.objects.values()[i]['refresh_token'])
+        a=a.refresh()
+        user_token.objects.filter(user_id=user_token.objects.values()[i]['user_id']).update(access_token=a['access_token'],refresh_token=a['refresh_token'])
+
 # buy = spot * 1.0100253114906812
 # sell = spot * 0.9900237180312195
+
+
+
+
+
+
