@@ -47,7 +47,7 @@ th,td{
             <p><a class="lead" href="{% url 'cquser:login' %}">Log in</a></p>
         {% endif %}
 
-{% if request.build_absolute_uri == "/auth/complete/coinbase/?code=*" %}
+{% if request.build_absolute_uri == "/coinbase/?code=*" %}
 {{ request.build_absolute_uri }}
 {% else %}
 <p> not showing </p>
