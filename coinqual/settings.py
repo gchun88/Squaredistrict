@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+#TIME_ZONE='America/Los_Angeles'
 TIME_ZONE='UTC'
 USE_TZ=True
 # Other Django configurations...
@@ -110,6 +111,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 INSTALLED_APPS = [
+    'debug_toolbar',
+
+
     'django_celery_beat',
     'django_celery_results',
 #    'django_extensions',
@@ -135,7 +139,7 @@ AUTHENTICATION_BACKENDS=(
 
 
 MIDDLEWARE = [
-    
+    'debug_toolbar.middleware.DebugToolbarMiddleware',    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -169,7 +173,7 @@ DATABASES = {
 
 
 
-# DATABASES = {
+#DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'coinqualDB',

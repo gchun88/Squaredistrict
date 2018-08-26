@@ -3,13 +3,11 @@
 
 {% extends 'polls/main.html' %}
 
-{% block content %}
-
-  <h2>GEO API</h2>
-  <p>Your ip address is <strong>{{ ip }}</strong>, and you are probably in <strong>{{ country }}</strong> right now.</p>
+{% block content1 %}
+{{us}}
+    <p>Username: {{user.username}}</p>
     <p><h1>Bitcoin Price : {{ price }}</p></h1>
     <p><h1>CoinBase User ID : {{ user }}</p></h1>
-    <p><a href = "http://127.0.0.1:8000/"> IP page </a></p>
 {% endblock %}
 
 
