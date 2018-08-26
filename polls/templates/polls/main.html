@@ -60,7 +60,6 @@ th,td{
     <!-- This font is conneted with google fonts -->
     <a href="http://www.coinqual.com/"target="_self"><h1 style="font-family:Shadows Into Light;font-size:400%;"><span style="color:#527ecc">C</span>oin<span style="color:#527ecc">Q</span>ual</h1></a>
     <a href="http://www.coinqual.com/polls"> <h1> Let's go to our Poll Site !</h1></a>
-    <h5>by Tyler, Tuff, Daniel, and Jaehui </h5>
 
 </header>
 
@@ -74,13 +73,24 @@ th,td{
 <th>Coin Amount</th>
 <th>Time Requested</th>
 <th>Transaction_id</th>
+<th>Buy/Sell
 <th>Cancel</th>
 </tr>
 
 {% for j in records %}
 <tr>
 <td>${{j.price}}  </td> <td>{{j.coin}}  </td> <td>{{j.coinamt}}  </td> <td>{{j.time}}  </td>
-<td> {{j.transaction_id}}</td>
+<td> {{j.transaction_id}}</td> 
+{% if j.b_s == 'b' %}
+<td>buy</td>
+{% else %}
+<td>sell</td>
+{%endif%}
+
+
+
+
+
 <td><form method="post" action=".">{% csrf_token %}
 <button type="submit" name="close {{j.transaction_id}}">Cancel Reserved Transaction</button>
 </form>
