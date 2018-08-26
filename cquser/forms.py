@@ -26,7 +26,8 @@ coins=(
     ('btc','Bitcoin'),
     ('bch','Bitcoin Cash'),
     ('eth','Etherium'),
-    ('ltc','Litecoin')
+    ('ltc','Litecoin'),
+    ('etc','Etherium Classic'),
 
 )
 
