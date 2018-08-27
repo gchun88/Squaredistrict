@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9a1a25-cee9-4555-9898-982f44f50083" name="Default" comment="Merge branch 'master' of http://github.com/gchun88/Squaredistrict&#10;&#10;# Conflicts:&#10;#&#9;planner/tasks.py">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Squaredistrict1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Squaredistrict1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0fe2d681-8915-43a8-95ce-e19c965207c0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b164465-53cb-49e1-a93d-46f18bdc26b6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3289d6e1-5320-4497-8547-6c5f7714f558.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7da6b4ea-fbbc-41a3-9a5a-1b26621ee3b1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a364c7e0-5ace-40f6-bde1-48a8fe02d3d6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b8be8c01-c0c9-43d9-94eb-d97aaedaf39a.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinqual/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/coinqual/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cquser/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cquser/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cquser/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cquser/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cquser/templates/cquser/chain.html" beforeDir="false" afterPath="$PROJECT_DIR$/cquser/templates/cquser/chain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cquser/templates/cquser/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/cquser/templates/cquser/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cquser/templates/cquser/try.html" beforeDir="false" afterPath="$PROJECT_DIR$/cquser/templates/cquser/try.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cquser/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cquser/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cquser/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cquser/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/templates/polls/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/polls/templates/polls/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,37 +30,23 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="sqlite_master: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="sqlite_sequence: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
         <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -89,6 +55,10 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db.sqlite3 [4]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="identifier.sqlite" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -155,14 +125,52 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1584961433">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Django Console" value="2923" />
+          <entry key="html" value="671" />
+          <entry key="py" value="710" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="671" />
+          <entry key="Python" value="3633" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="auth_user" value="1" />
+          <entry key="cquser_user_token" value="1" />
+          <entry key="html" value="1" />
+          <entry key="py" value="12" />
+          <entry key="sql" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="Python" value="12" />
+          <entry key="Scratch" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/planner/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="750">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -171,20 +179,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coinqual/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1534141539951" expanded="true" signature="706:707" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/cquser_transactionm">
+        <entry file="das://48bf658f-945f-4f03-a2ca-5f88b73d9247/schema/main/table/auth_user">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -193,41 +188,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coinqual/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="162" selection-start-line="162" selection-end-line="162" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polls/templates/polls/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/planner/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cquser/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
-              <folding>
-                <marker date="1534065275438" expanded="true" signature="2119:2158" ph="..." />
-                <marker date="1534065275438" expanded="true" signature="2177:2203" ph="..." />
-              </folding>
+            <state relative-caret-position="218">
+              <caret line="97" column="24" lean-forward="true" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -235,8 +211,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cquser/forms.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coinqual/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="141" column="35" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/planner/models.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="43" />
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -244,12 +244,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coinqual/celery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
+            <state relative-caret-position="474">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/planner/celery.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/planner/forms.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -281,6 +296,8 @@
       <find>form2</find>
       <find>chain</find>
       <find>request</find>
+      <find>email</find>
+      <find>debug</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -289,7 +306,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/account/forms.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/formsam/templates/formsam/loggedin.html" />
         <option value="$PROJECT_DIR$/formsam/templates/formsam/register.html" />
@@ -325,21 +341,22 @@
         <option value="$PROJECT_DIR$/planner/celery.py" />
         <option value="$PROJECT_DIR$/polls/templates/polls/detail.html" />
         <option value="$PROJECT_DIR$/polls/templates/polls/results.html" />
-        <option value="$PROJECT_DIR$/coinqual/settings.py" />
-        <option value="$PROJECT_DIR$/planner/tasks.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/planner/backend.py" />
-        <option value="$PROJECT_DIR$/cquser/forms.py" />
         <option value="$PROJECT_DIR$/planner/models.py" />
         <option value="$PROJECT_DIR$/polls/views.py" />
-        <option value="$PROJECT_DIR$/cquser/models.py" />
-        <option value="$PROJECT_DIR$/polls/templates/polls/main.html" />
         <option value="$PROJECT_DIR$/cquser/templates/cquser/chain.html" />
         <option value="$PROJECT_DIR$/cquser/urls.py" />
         <option value="$PROJECT_DIR$/cquser/templates/cquser/try.html" />
         <option value="$PROJECT_DIR$/cquser/views.py" />
         <option value="$PROJECT_DIR$/cquser/templates/cquser/login.html" />
+        <option value="$PROJECT_DIR$/cquser/models.py" />
+        <option value="$PROJECT_DIR$/planner/tasks.py" />
+        <option value="$PROJECT_DIR$/coinqual/celery.py" />
         <option value="$PROJECT_DIR$/coinqual/views.py" />
+        <option value="$PROJECT_DIR$/cquser/forms.py" />
+        <option value="$PROJECT_DIR$/coinqual/settings.py" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/main.html" />
       </list>
     </option>
   </component>
@@ -350,10 +367,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="27" />
-    <option name="width" value="803" />
-    <option name="height" value="825" />
+    <option name="x" value="285" />
+    <option name="y" value="115" />
+    <option name="width" value="856" />
+    <option name="height" value="765" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -382,61 +399,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
+              <item name="sqdt082118" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt082118" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
+              <item name="sqdt082118" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt082118" type="462c0819:PsiDirectoryNode" />
               <item name="coinqual" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
+              <item name="sqdt082118" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt082118" type="462c0819:PsiDirectoryNode" />
               <item name="cquser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
-              <item name="cquser" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
-              <item name="cquser" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
-              <item name="cquser" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="cquser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
-              <item name="planner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
+              <item name="sqdt082118" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt082118" type="462c0819:PsiDirectoryNode" />
               <item name="polls" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
+              <item name="sqdt082118" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt082118" type="462c0819:PsiDirectoryNode" />
               <item name="polls" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Squaredistrict2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Squaredistrict2" type="462c0819:PsiDirectoryNode" />
+              <item name="sqdt082118" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqdt082118" type="462c0819:PsiDirectoryNode" />
               <item name="polls" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="polls" type="462c0819:PsiDirectoryNode" />
@@ -445,7 +439,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,6 +457,129 @@
       <recent name="$PROJECT_DIR$/polls" />
       <recent name="$PROJECT_DIR$/account" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/coinqual/__pycache__/celery.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/coinqual/__pycache__/settings.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/coinqual/__pycache__/urls.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/coinqual/__pycache__/views.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/coinqual/celery.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cquser/__pycache__/forms.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cquser/forms.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cquser/migrations/__pycache__/0001_initial.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/db.sqlite3</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/planner/__pycache__/models.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/planner/migrations/__pycache__/0001_initial.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/planner/tasks.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/polls/migrations/__pycache__/0001_initial.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/polls/templates/polls/main.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -605,7 +721,35 @@
       <option name="project" value="LOCAL" />
       <updated>1533671604231</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge branch 'master' of http://github.com/gchun88/Squaredistrict&#10;&#10;# Conflicts:&#10;#&#9;planner/tasks.py">
+      <created>1534927863123</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1534927863123</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merge branch 'master' of http://github.com/gchun88/Squaredistrict&#10;&#10;# Conflicts:&#10;#&#9;planner/tasks.py">
+      <created>1534927878000</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1534927878000</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge branch 'master' of http://github.com/gchun88/Squaredistrict&#10;&#10;# Conflicts:&#10;#&#9;planner/tasks.py">
+      <created>1535257613927</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535257613927</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge branch 'master' of http://github.com/gchun88/Squaredistrict&#10;&#10;# Conflicts:&#10;#&#9;planner/tasks.py">
+      <created>1535259661061</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1535259661061</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -621,31 +765,31 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12451577" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12562259" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.83547926" weight="0.3287858" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.67459875" visible="true" weight="0.34666666" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.67459875" visible="true" weight="0.34111112" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7281831" weight="0.35066506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32889965" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49961567" weight="0.28767124" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.65688986" weight="0.42666668" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49961567" weight="0.28716215" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.65688986" weight="0.4256757" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3431101" side_tool="true" weight="0.42666668" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.7100166" weight="0.26555556" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.7100166" weight="0.26914415" />
       <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.49463806" weight="0.4211111" />
       <window_info anchor="bottom" id="SQL Generator" order="13" sideWeight="0.49713877" weight="0.29020557" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.26342005" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.17155506" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31075698" />
@@ -696,103 +840,16 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>'77d5af4941ffd6d5f0c9149e2e303a1c28d9f44c09b63694d6f2f608c60947c0'</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="uml://DATABASE/faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_permission">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_permission</OriginalElement>
-          <nodes>
-            <node x="0.0" y="155.0">faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_permission</node>
-            <node x="7.0" y="0.0">faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.django_content_type</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_permission" target="faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.django_content_type">
-              <point x="0.0" y="-64.5" />
-              <point x="0.0" y="52.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-353.0" y="149.5" />
-          <SelectedNodes>
-            <node>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_permission</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_group">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_group</OriginalElement>
-          <nodes>
-            <node x="0.0" y="0.0">faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_group</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-379.5" y="48.0" />
-          <SelectedNodes>
-            <node>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.auth_group</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.polls_choice">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.polls_choice</OriginalElement>
-          <nodes>
-            <node x="8.0" y="155.0">faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.polls_choice</node>
-            <node x="0.0" y="0.0">faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.polls_question</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.polls_choice" target="faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.polls_question">
-              <point x="0.0" y="-64.5" />
-              <point x="0.0" y="52.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-344.0" y="149.5" />
-          <SelectedNodes>
-            <node>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.polls_choice</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.planner_spot_price">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.planner_spot_price</OriginalElement>
-          <nodes>
-            <node x="0.0" y="0.0">faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.planner_spot_price</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-384.0" y="96.0" />
-          <SelectedNodes>
-            <node>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.planner_spot_price</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.django_celery_beat_crontabschedule">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -803,7 +860,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-322.5" y="96.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-322.0" y="96.0" />
           <SelectedNodes>
             <node>faa04fcd-b6e5-41a9-8e69-86f2fcae92de.TABLE:main.django_celery_beat_crontabschedule</node>
           </SelectedNodes>
@@ -811,6 +868,7 @@
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -846,12 +904,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.730426164519326" x="-674.9484396200816" y="-236.84803256445053" />
+          <settings layout="Hierarchic Group" zoom="0.730426164519326" x="-675.0" y="-237.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -866,12 +925,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.276434426229508" x="172.00522821271295" y="760.6084443730937" />
+          <settings layout="Hierarchic Group" zoom="1.276434426229508" x="172.0" y="761.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -892,34 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coinqual/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="226" selection-start-line="226" selection-end-line="226" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/planner/backend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planner/celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planner/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,97 +1006,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/cquser_user_token">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_beat_crontabschedule">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_beat_intervalschedule">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_beat_periodictasks">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_beat_solarschedule">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_results_taskresult">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_content_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_migrations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_session">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/planner_spot_price">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/polls_choice">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/polls_question">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/sqlite_master">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/cquser_user_token" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_beat_crontabschedule" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_beat_intervalschedule" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_beat_periodictasks" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_beat_solarschedule" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_celery_results_taskresult" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_content_type" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_migrations" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/django_session" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/planner_spot_price" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/polls_choice" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/polls_question" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/sqlite_master" />
     <entry file="file://$PROJECT_DIR$/cquser/templates/cquser/chain.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1068,24 +1026,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cquser/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planner/forms.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/polls/models.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cquser/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/coinqual/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1094,31 +1036,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coinqual/celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/auth_user" />
+    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/cquser_transactionm" />
+    <entry file="file://$PROJECT_DIR$/planner/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/planner/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/abe91ad6-4988-43a9-b892-39a4eb04fd2c/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://48bf658f-945f-4f03-a2ca-5f88b73d9247/schema/main/table/cquser_user_token">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+        <state relative-caret-position="601">
+          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cquser/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cquser/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/planner/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1129,51 +1080,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cquser/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="705">
           <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planner/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="41" />
           <folding>
-            <marker date="1534065275438" expanded="true" signature="2119:2158" ph="..." />
-            <marker date="1534065275438" expanded="true" signature="2177:2203" ph="..." />
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48bf658f-945f-4f03-a2ca-5f88b73d9247/schema/main/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planner/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planner/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planner/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cquser/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="240">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinqual/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="141" column="35" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/templates/polls/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coinqual/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1534141539951" expanded="true" signature="706:707" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://faa04fcd-b6e5-41a9-8e69-86f2fcae92de/schema/main/table/cquser_transactionm">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="218">
+          <caret line="97" column="24" lean-forward="true" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
         </state>
       </provider>
     </entry>

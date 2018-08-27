@@ -160,7 +160,7 @@ def cb_usr_code(request):
         save_user_token.save()
         clito=user_token.objects.filter(user_id=usrid).values()[0]
         client=OAuthClient(clito['access_token'],clito['refresh_token'])
-        userc=client.get_current_user().name
+        userc=client.get_current_user()['email']
         price=client.get_spot_price().amount
 #    if request.user is not 'ananymous' or request.user is not None:
 #        if client is None:
