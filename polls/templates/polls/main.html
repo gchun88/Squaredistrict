@@ -73,8 +73,10 @@ th,td{
 <th>Coin Amount</th>
 <th>Time Requested</th>
 <th>Transaction_id</th>
-<th>Buy/Sell
+<th>Buy/Sell</th>
+<th>Total Price</th>
 <th>Cancel</th>
+
 </tr>
 
 {% for j in records %}
@@ -90,10 +92,25 @@ th,td{
 
 
 
+<td><div id="trasac{{ j.transaction_id }}"></div>
+<script>
+var x = {{ j.price }};
+var y = {{ j.coinamt }};
+var z = x * y;
+var z1= ''
+document.getElementById("trasac{{ j.transaction_id }}").innerHTML = z1.concat('$',z.toLocaleString());
+</script>
+</td>
+
+
+
+
 
 <td><form method="post" action=".">{% csrf_token %}
-<button type="submit" name="close {{j.transaction_id}}">Cancel Reserved Transaction</button>
+    <button type="submit" name="close {{j.transaction_id}}">Cancel Reserved Transaction</button>
 </form>
+</td>
+
  <br>
 </tr>
 
