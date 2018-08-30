@@ -15,8 +15,8 @@ from django.contrib.auth import login, authenticate
 from planner.models import spot_price
 
 from cquser.forms import transaction
-
-
+from django.contrib.messages import get_messages
+from django.contrib import messages
 
 cities = [1,2,3,4,5,6,7,'wef']
 tsdata=['b_s','price','coin','coinamt']
@@ -66,14 +66,20 @@ def main(request):
         request.session['user_id']=str(request.user)
     else:
         records=[]
+        messages.add_message(request, messages.INFO, 'Password or Username does not match.')
+        return redirect('cquser:login')
     try:
         trst_id=[re.sub("[a-z]| ","",a) for a in request.POST if "close" in a]
         transactionM.objects.filter(transaction_id=int(trst_id[0])).delete()
 
     except:
         print("hi")
-    Cprice = spot_price.objects.order_by('-id').values_list('btc',flat=True)[0]
-    context={'Cpirce':round(Cprice/1.0100253114906812,2),
+
+    try:
+        Cprice = round(spot_price.objects.order_by('-id').values_list('btc',flat=True)[0]/1.0100253114906812,2)
+    except:
+        Cprice = []
+    context={'Cpirce':Cprice,
              'cities':cities,
              'records':records,}
 

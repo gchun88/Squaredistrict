@@ -13,60 +13,76 @@
     <!-- Draft icon for Web -->
     <link rel="icon" type="image/png" href="{% static 'Icon.png' %}" sizes="16x16"/>
     <style>
-    table,th,td{
-          border:1px solid black;
-          border-collapse:collapse;
+
+#Tra-Table th, #Tra-Table td{
+    border: 1px solid #ddd;
+    padding: 8px;
 }
-th,td{
-     padding: 5px;
-     text-align: left;
+
+#Tra-Table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
+#Tra-Table tr:nth-child(even){background-color: #f2f2f2;}
+
+#Tra-Table tr:hover {background-color: #ddd;}
+#Tra-Table tr{
+    text-align: center;}
+    
+
+#Tra-Table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #007acc;
+    color: white;
+}
+
 </style>
 </head>
 
 <header style="text-align:left">
-<p>
+<p ALIGN ="left">
     <a href="http://www.coinqual.com/" target="_self" class="logo">
-      <TH ALIGN="left"> <img src="{% static 'CQ.png' %}" style="width:200px;height:200px;" class="logoimg" alt="CoinQual Logo">
+      <TH ALIGN="left"> <img src="{% static 'CQ.png' %}" ALIGN='left' style="width:200px;height:200px;" class="logoimg" alt="CoinQual Logo">
     </a>
 </p>
 </header>
 
-<header style="text-align:center">
+<header style="text-align:right">
     <p>
     {% block content1 %}
     {% if user.is_authenticated %}
-        {{ request.build_absolute_uri }}
+<!--        {{ request.build_absolute_uri }} --!>
              <p class="display-4">Hello, {{ user.username }}</p>
              <p> <a href="{% url 'cquser:logout' %}"> Logout </a></p>
              <p> <a href="{% url 'cquser:chain' %}"> Transaction Chain Link </a></p>
              <p> <a href = "{% url 'coinbase' %}"> Get your connection with Coinbase!</a></p>
         {% else %}
-        {{ request.build_absolute_uri }}
+<!--        {{ request.build_absolute_uri }} --!>
         <p><a class="lead" href="{% url 'cquser:signup' %}">SignUp</a></p>
             <p><a class="lead" href="{% url 'cquser:login' %}">Log in</a></p>
         {% endif %}
 
-{% if request.build_absolute_uri == "/coinbase/?code=*" %}
-{{ request.build_absolute_uri }}
+<!--{% if request.build_absolute_uri == "/coinbase/?code=*" %}--!>
+<!--{{ request.build_absolute_uri }} --!>
 {% else %}
-<p> not showing </p>
 {% endif %}
 
-<p>{{ code1 }}</p>
+<!-- <p>{{ code1 }}</p> --!>
 
 {% load static %}
 </p>
-    <!-- This font is conneted with google fonts -->
-    <a href="http://www.coinqual.com/"target="_self"><h1 style="font-family:Shadows Into Light;font-size:400%;"><span style="color:#527ecc">C</span>oin<span style="color:#527ecc">Q</span>ual</h1></a>
-    <a href="http://www.coinqual.com/polls"> <h1> Let's go to our Poll Site !</h1></a>
+    <!-- This font is conneted with google fonts --!>
+    <!-- <a href="{% url 'main' %}" target="_self"><h1 style="font-family:Shadows Into Light;font-size:400%;"><span style="color:#527ecc">C</span>oin<span style="color:#527ecc">Q</span>ual</h1></a> --!>
 
 </header>
 
 <body>
 <h2>${{Cprice}} </h2>
 {% if user.is_authenticated %}
-<table style="width:100%">
+<table style="width:100%" id="Tra-Table">
 <tr>
 <th>Targeting Price</th>
 <th>Coin Type</th>
@@ -81,7 +97,26 @@ th,td{
 
 {% for j in records %}
 <tr>
-<td>${{j.price}}  </td> <td>{{j.coin}}  </td> <td>{{j.coinamt}}  </td> <td>{{j.time}}  </td>
+<td>${{j.price}}  </td> <td>{{j.coin}}  </td> <td>{{j.coinamt}}  </td> 
+
+
+
+<td id="transtime{{ j.transaction_id }}">{{j.time|date:'F j H:i'}}  </td>
+
+<script type='text/javascript'>
+
+var offset = new Date().getTimezoneOffset();
+var utctime = new Date("{{ j.time|date:'F j, Y H:i' }}");
+
+var caloff = new Date(utctime.setMinutes(utctime.getMinutes()-offset));
+//var caloff = new Date(utctime);
+
+var datestring = caloff.getMonth()+1 + "-" + caloff.getDate() + "-" + caloff.getFullYear() + " " +caloff.getHours() + ":" + caloff.getMinutes();
+
+document.getElementById("transtime{{ j.transaction_id }}").innerHTML = datestring;
+
+</script>
+
 <td> {{j.transaction_id}}</td> 
 {% if j.b_s == 'b' %}
 <td>buy</td>
@@ -117,11 +152,22 @@ document.getElementById("trasac{{ j.transaction_id }}").innerHTML = z1.concat('$
 {% endfor %}
 
 </table>
+<p>
 {%endif%}
 {%endblock%}
 
+{% load tz %}
+{% localtime on %}
+{{value}}
+{% endlocaltime %}
+
+{% localtime off%}
+{{value}}
+{% endlocaltime %}
+</p>
 
 <table>
+
     <table width="100%"border="1">
         <TR>
             <TH ALIGN="CENTER"><div id="Table">About</div></TH>
@@ -138,14 +184,6 @@ document.getElementById("trasac{{ j.transaction_id }}").innerHTML = z1.concat('$
     </table>
 </table>
 <P>&nbsp;</P>
-
-
-<div id="container">
-    <div id="First"><p title="Will be updated soon">First Charts and Graph</p></div>
-    <div id="Second"><p title="Will be updated soon">Second Charts and Graph</p></div>
-</div>
-<a href="https://www.coinbase.com/oauth/authorize?response_type=code&client_id=77d5af4941ffd6d5f0c9149e2e303a1c28d9f44c09b63694d6f2f608c60947c0&redirect_uri=http://www.coinqual.com/&state=SECURE_RANDOM&scope=wallet:accounts:read">Buy</a>
-<a href="http://www.google.com/">Sell</a>
 
 
 
