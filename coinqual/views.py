@@ -27,7 +27,7 @@ from django.contrib.auth.models import User
 from cquser.forms import LoginForm
 def main(request):
 
-    
+
     if request.method == "POST" :
         form=transaction(request.POST)
         if form.is_valid():
@@ -61,13 +61,14 @@ def main(request):
                     login(request, user)
                 else:
                     return HttpResponse('disabled account')
+            else:
+                #message.add_message(request, messages.INFO, 'password or username does not match.')
+                return redirect('cquser:login')
     if request.user.is_authenticated:
         records = transactionM.objects.filter(active=1,user_id=User.objects.filter(username=request.user)[0]).order_by('time')
         request.session['user_id']=str(request.user)
     else:
         records=[]
-        messages.add_message(request, messages.INFO, 'Password or Username does not match.')
-        return redirect('cquser:login')
     try:
         trst_id=[re.sub("[a-z]| ","",a) for a in request.POST if "close" in a]
         transactionM.objects.filter(transaction_id=int(trst_id[0])).delete()
@@ -75,11 +76,8 @@ def main(request):
     except:
         print("hi")
 
-    try:
-        Cprice = round(spot_price.objects.order_by('-id').values_list('btc',flat=True)[0]/1.0100253114906812,2)
-    except:
-        Cprice = []
-    context={'Cpirce':Cprice,
+    coinprices = spot_price.objects.order_by('-id')[0]
+    context={'coinprices':coinprices,
              'cities':cities,
              'records':records,}
 

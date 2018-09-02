@@ -65,12 +65,6 @@
             <p><a class="lead" href="{% url 'cquser:login' %}">Log in</a></p>
         {% endif %}
 
-<!--{% if request.build_absolute_uri == "/coinbase/?code=*" %}--!>
-<!--{{ request.build_absolute_uri }} --!>
-{% else %}
-{% endif %}
-
-<!-- <p>{{ code1 }}</p> --!>
 
 {% load static %}
 </p>
@@ -80,7 +74,31 @@
 </header>
 
 <body>
-<h2>${{Cprice}} </h2>
+
+<h3> BTC :$ <span id="btc price" class="coinprices"> </span> </h3>
+
+<h3> BTC:$ <span id="btc price" class="coinprice">  </span> </h3>
+<h3> BTH:$ <span id="bth price" class="coinprice">  </span> </h3>
+<h3> ETH:$ <span id="eth price" class="coinprice">  </span> </h3>
+<h3> ETC:$ <span id="etc price" class="coinprice">  </span> </h3>
+<h3> LTC:$ <span id="ltc price" class="coinprice">  </span> </h3> 
+{{coinprices}}
+<script>
+var btc = setInterval(myTimer, 180000);
+function myTimer() {
+    var btc = {{coinprices.btc}};
+    var bch = {{coinprices.bch}};
+    var eth = {{coinprices.eth}};
+    var etc = {{coinprices.etc}};
+    var ltc = {{coinprices.ltc}};
+    document.getElementById("btc price").innerHTML = btc;
+    document.getElementById("bch price").innerHTML = bch;
+    document.getElementById("eth price").innerHTML = eth;
+    document.getElementById("etc price").innerHTML = etc;
+    document.getElementById("ltc price").innerHTML = ltc;
+}
+</script>
+
 {% if user.is_authenticated %}
 <table style="width:100%" id="Tra-Table">
 <tr>
@@ -147,14 +165,16 @@ document.getElementById("trasac{{ j.transaction_id }}").innerHTML = z1.concat('$
 </td>
 
  <br>
+{% endfor %}
 </tr>
 
-{% endfor %}
 
 </table>
 <p>
-{%endif%}
-{%endblock%}
+{% endif %}
+{% endblock %}
+
+
 
 {% load tz %}
 {% localtime on %}
