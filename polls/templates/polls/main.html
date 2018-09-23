@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <!-- From HTML Templates-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
+  <link rel="stylesheet" type="text/css" href="lib/gritter/css/jquery.gritter.css" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <script src="lib/chart-master/Chart.js"></script>
+
+    <!-- HTML Templates end-->
+
+
     <meta charset="utf-8"/>
     <title>CoinQual</title>
     {% load static %}
@@ -64,8 +89,7 @@
         <p><a class="lead" href="{% url 'cquser:signup' %}">SignUp</a></p>
             <p><a class="lead" href="{% url 'cquser:login' %}">Log in</a></p>
         {% endif %}
-
-
+{{rds}}
 {% load static %}
 </p>
     <!-- This font is conneted with google fonts --!>
@@ -74,30 +98,42 @@
 </header>
 
 <body>
-
-<h3> BTC :$ <span id="btc price" class="coinprices"> </span> </h3>
-
-<h3> BTC:$ <span id="btc price" class="coinprice">  </span> </h3>
-<h3> BTH:$ <span id="bth price" class="coinprice">  </span> </h3>
-<h3> ETH:$ <span id="eth price" class="coinprice">  </span> </h3>
-<h3> ETC:$ <span id="etc price" class="coinprice">  </span> </h3>
-<h3> LTC:$ <span id="ltc price" class="coinprice">  </span> </h3> 
-{{coinprices}}
+<br>
+<p>
+<h3> BTC:$ <span id="btc price" class="coinprice"> {{coinprices.btc}} </span> </h3>
+<h3> BTH:$ <span id="bch price" class="coinprice"> {{coinprices.bch}} </span> </h3>
+<h3> ETH:$ <span id="eth price" class="coinprice"> {{coinprices.eth}} </span> </h3>
+<h3> ETC:$ <span id="etc price" class="coinprice"> {{coinprices.etc}} </span> </h3>
+<h3> LTC:$ <span id="ltc price" class="coinprice"> {{coinprices.ltc}} </span> </h3>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</p>
+</br>
 <script>
-var btc = setInterval(myTimer, 180000);
-function myTimer() {
-    var btc = {{coinprices.btc}};
-    var bch = {{coinprices.bch}};
-    var eth = {{coinprices.eth}};
-    var etc = {{coinprices.etc}};
-    var ltc = {{coinprices.ltc}};
-    document.getElementById("btc price").innerHTML = btc;
-    document.getElementById("bch price").innerHTML = bch;
-    document.getElementById("eth price").innerHTML = eth;
-    document.getElementById("etc price").innerHTML = etc;
-    document.getElementById("ltc price").innerHTML = ltc;
-}
+
+
+setInterval(function(){
+    $.ajax({
+        url: "{% url 'jsonajax' %}",
+        success: function(data1){
+            document.getElementById("btc price").innerHTML = data1[0]['btc'];
+            document.getElementById("bch price").innerHTML = data1[0]['bch'];
+            document.getElementById("eth price").innerHTML = data1[0]['eth'];
+            document.getElementById("etc price").innerHTML = data1[0]['etc'];
+            document.getElementById("ltc price").innerHTML = data1[0]['ltc'];
+        }
+    });
+},180000)
+
+
+
+//    document.getElementById("btc price").innerHTML = ;
+ //   document.getElementById("bch price").innerHTML = bch;
+//    document.getElementById("eth price").innerHTML = eth;
+//    document.getElementById("etc price").innerHTML = etc;
+//    document.getElementById("ltc price").innerHTML = ltc;
+
 </script>
+
 
 {% if user.is_authenticated %}
 <table style="width:100%" id="Tra-Table">

@@ -50,6 +50,11 @@ urlpatterns = [
 #    path('formsam/', include('formsam.urls')),
 #    path('usersignup/', include('usersignup.urls')),
     path('cquser/',include('cquser.urls')),
+    path('jsonajax/',views.priceajax, name='jsonajax'),
+
+
+
+
 
 ]
 
