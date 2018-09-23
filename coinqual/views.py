@@ -63,6 +63,7 @@ def main(request):
                     return HttpResponse('disabled account')
             else:
                 #message.add_message(request, messages.INFO, 'password or username does not match.')
+                messages.error(request,'Invalid Login Crendentials')
                 return redirect('cquser:login')
     if request.user.is_authenticated:
         records = transactionM.objects.filter(active=1,user_id=User.objects.filter(username=request.user)[0]).order_by('time')
@@ -75,7 +76,6 @@ def main(request):
 
     except:
         print("hi")
-
     coinprices = spot_price.objects.order_by('-id')[0]
     context={'coinprices':coinprices,
              'cities':cities,
@@ -141,7 +141,10 @@ from django.contrib.auth.models import User
 from cquser.models import user_token
 
 def cb_usr_code(request):
-    user=User.objects.filter(username=request.session['user_id']).values()[0]
+    user=User.objects.filter(username=request.session.get('user_id')).values()[0]
+
+    request.session.__delitem__('user_id')
+
     userauth=authenticate(request,username=user['username'],password=user['password'])
 
     login(request,userauth)
@@ -150,7 +153,7 @@ def cb_usr_code(request):
     code1=request.GET.get('code')
     r2=requests.post("https://api.coinbase.com/oauth/token",data={"grant_type":"authorization_code","code":code1,"client_id":ClientId,"client_secret":clientsecret,"redirect_uri":"http://www.coinqual.com/coinbase/"})
     cbAFtoken=r2.json()
-    usrid=User.objects.filter(username=request.session['user_id']).values()[0]['id']
+    usrid=User.objects.filter(username=request.user).values()[0]['id']
         #client=OAuthClient(cbAFtoken['access_token'],cbAFtoken['refresh_token'])
     try:
         if len(user_token.objects.filter(user_id=usrid).values()[0]['access_token']) >2:
@@ -183,6 +186,8 @@ def cb_usr_code(request):
 #    return redirect('main')
     return render(request,'polls/home.html',context)
 
-
-
-
+from django.core import serializers
+from django.http import JsonResponse
+def priceajax(request):
+    data1=json.dumps([spot_price.objects.order_by('-id').values('btc','bch','ltc','etc','eth')[0]])
+    return HttpResponse(data1, content_type='application/json')

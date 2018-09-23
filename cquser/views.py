@@ -69,9 +69,21 @@ def try1(request):
 
 
 
-
+from django.contrib import messages
 from cquser.forms import LoginForm
 def user_login(request):
+    form=LoginForm(request.POST)
+    if form.is_valid():
+        username = form.cleaned_data.get('username')
+        password = form.cleaned_data.get('password')
+        user=authenticate(request,username=username,password=password)
+        if user is not None:
+            if user.is_active:
+                login(request,user)
+                return redirect('main')
+        else:
+            messages.warning(request,'Invalid Login')
+            
     return render(request, 'cquser/login.html')
 
 from cquser.forms import transaction
