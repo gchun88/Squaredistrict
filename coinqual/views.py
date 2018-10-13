@@ -141,7 +141,7 @@ from django.contrib.auth.models import User
 from cquser.models import user_token
 
 def cb_usr_code(request):
-    user=User.objects.filter(username=request.session.get('user_id')).values()[0]
+    user=User.objects.filter(username=request.session['user_id']).values()[0]
 
     request.session.__delitem__('user_id')
 
