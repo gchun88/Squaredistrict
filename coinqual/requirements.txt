@@ -16,7 +16,7 @@ django-secure==1.0.1
 django-sslserver==0.20
 hibagent==1.0.1
 idna==2.7
-Jinja2==2.8
+Jinja2==2.11.3
 jsonpatch==1.10
 jsonpointer==1.9
 kombu==4.2.1
