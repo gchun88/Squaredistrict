@@ -1,5 +1,5 @@
 
-celery==4.2.1
+celery==5.2.2
 
 coinbase==2.1.0
 
